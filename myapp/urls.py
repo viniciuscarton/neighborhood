@@ -23,21 +23,21 @@ urlpatterns = [
     path('sm_read_employees/', views.sm_read_employees, name='sm_read_employees'),
     path('sm_delete_employees/', views.sm_delete_employees, name='sm_delete_employees'),
     path('sm_edit_employees/', views.sm_edit_employees, name='sm_edit_employees'),
-    # RESIDENCIES HOUSES
+    # RESIDENCE HOUSES
     path('re_add_houses/', views.re_add_houses, name='re_add_houses'),
     path('re_read_houses/', views.re_read_houses, name='re_read_houses'),
     path('re_delete_houses/', views.re_delete_houses, name='re_delete_houses'),
     path('re_edit_houses/', views.re_edit_houses, name='re_edit_houses'),
-    # RESIDENTS APARTMENTS
+    # RESIDENCE APARTMENTS
     path('re_add_apartments/', views.re_add_apartments, name='re_add_apartments'),
     path('re_read_apartments/', views.re_read_apartments, name='re_read_apartments'),
     path('re_delete_apartments/', views.re_delete_apartments, name='re_delete_apartments'),
     path('re_edit_apartments/', views.re_edit_apartments, name='re_edit_apartments'),
-    # RESIDENTS RESIDENCIES
-    path('re_add_residencies/', views.re_add_residencies, name='re_add_residencies'),
-    path('re_read_residencies/', views.re_read_residencies, name='re_read_residencies'),
-    path('re_delete_residencies/', views.re_delete_residencies, name='re_delete_residencies'),
-    path('re_edit_residencies/', views.re_edit_residencies, name='re_edit_residencies'),
+    # RESIDENCE RESIDENTS
+    path('re_add_residents/', views.re_add_residents, name='re_add_residents'),
+    path('re_read_residents/', views.re_read_residents, name='re_read_residents'),
+    path('re_delete_residents/', views.re_delete_residents, name='re_delete_residents'),
+    path('re_edit_residents/', views.re_edit_residents, name='re_edit_residents'),
     # PRAYER
     path('pr_add_prayer/', views.pr_add_prayer, name='pr_add_prayer'),
     path('pr_read_prayer/', views.pr_read_prayer, name='pr_read_prayer'),

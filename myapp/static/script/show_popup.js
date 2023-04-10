@@ -3,15 +3,15 @@ document.getElementById('supermarket').addEventListener('click', function () {
     document.getElementById('supermarket_popup').style.display = 'block';
 });
 
-// RESIDENCIES
+// RESIDENCE
 for (let i = 1; i <= 40; i++) {
     document.getElementById('house' + i).addEventListener('click', function () {
-        document.getElementById('residencies_popup').style.display = 'block';
+        document.getElementById('residence_popup').style.display = 'block';
     });
 }
 for (let i = 1; i <= 10; i++) {
     document.getElementById('apartment' + i).addEventListener('click', function () {
-        document.getElementById('residencies_popup').style.display = 'block';
+        document.getElementById('residence_popup').style.display = 'block';
     });
 }
 

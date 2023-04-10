@@ -38,7 +38,7 @@ functionsDiv.style.display = "none";
 shiftsDiv.style.display = "none";
 employeesDiv.style.display = "none";
 
-// RESIDENCIES
+// RESIDENCE
 const houseDiv = document.getElementById("RE-HOUSES");
 const apartmentDiv = document.getElementById("RE-APARTMENTS");
 const residentDiv = document.getElementById("RE-RESIDENTS");

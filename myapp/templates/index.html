@@ -381,14 +381,14 @@
             <button class="button-close"
                 onclick="document.getElementById('supermarket_popup').style.display = 'none';">Close</button>
         </div>
-        <div id="residencies_popup"
+        <div id="residence_popup"
             style="display:none;position:absolute;top:50%;left:50%;transform:translate(-50%, -50%);background-color:#eceaea;padding:10px;border-radius:6px;z-index: 1; border: 1px solid black; width: 280px; max-height: 440px; overflow-y: auto; justify-content: center; font-size: 12px;">
             <button id="btn-house" class="button-style">Houses</button>
             <button id="btn-apartment" class="button-style">Apartments</button>
             <button id="btn-resident" class="button-style">Residents</button>
             <div id="RE-HOUSES">
                 <div id="re_hou-add-form">
-                    <h2>Add house to residencies_houses</h2>
+                    <h2>Add house to residence_houses</h2>
                     <form class="HAform" method="post" action="re_add_houses/">
                         {% csrf_token %}
                         <input type="text" class="input input-text" name="address" placeholder="address" required><br>
@@ -408,7 +408,7 @@
                     </div>
                 </div>
                 <div id="re_hou-edit-form" style="display:none;">
-                    <h2>Edit house from residencies_houses</h2>
+                    <h2>Edit house from residence_houses</h2>
                     <form method="post" action="re_edit_houses/">
                         {% csrf_token %}
                         <input type="number" class="input input-text" name="id" placeholder="id" required><br>
@@ -429,7 +429,7 @@
                     </div>
                 </div>
                 <div id="re_hou-delete-form" style="display:none;">
-                    <h2>Delete house from residencies_houses</h2>
+                    <h2>Delete house from residence_houses</h2>
                     <form class="HDForm" method="post" action="re_delete_houses/">
                         {% csrf_token %}
                         <input type="number" class="input input-text" name="id" placeholder="id" required><br>
@@ -444,7 +444,7 @@
             </div>
             <div id="RE-APARTMENTS">
                 <div id="re_apt-add-form">
-                    <h2>Add apartment to residencies_apartments</h2>
+                    <h2>Add apartment to residence_apartments</h2>
                     <form class="HAform" method="post" action="re_add_apartments/">
                         {% csrf_token %}
                         <input type="text" class="input input-text" name="address" placeholder="address" required><br>
@@ -468,7 +468,7 @@
                     </div>
                 </div>
                 <div id="re_apt-edit-form" style="display:none;">
-                    <h2>Edit apartment from residencies_apartments</h2>
+                    <h2>Edit apartment from residence_apartments</h2>
                     <form method="post" action="re_edit_apartments/">
                         {% csrf_token %}
                         <input type="number" class="input input-text" name="id" placeholder="id" required><br>
@@ -493,7 +493,7 @@
                     </div>
                 </div>
                 <div id="re_apt-delete-form" style="display:none;">
-                    <h2>Delete apartment from residencies_apartments</h2>
+                    <h2>Delete apartment from residence_apartments</h2>
                     <form method="post" action="re_delete_apartments/">
                         {% csrf_token %}
                         <input type="number" class="input input-text" name="id" placeholder="id" required><br>
@@ -508,8 +508,8 @@
             </div>
             <div id="RE-RESIDENTS">
                 <div id="re_res-add-form">
-                    <h2>Add resident to residencies_residents</h2>
-                    <form class="HAform" method="post" action="re_add_residencies/">
+                    <h2>Add resident to residence_residents</h2>
+                    <form class="HAform" method="post" action="re_add_residents/">
                         {% csrf_token %}
                         <input type="text" class="input input-text" name="first_name" placeholder="first name"
                             required><br>
@@ -538,12 +538,12 @@
                     <div style="font-size: 18px; font-style:oblique;">
                         <a href="#" onclick="RE_RESshowEditForm()">Edit</a> |
                         <a href="#" onclick="RE_RESshowDeleteForm()">Delete</a> |
-                        <a href="{% url 're_read_residencies' %}" target="_blank">Read</a>
+                        <a href="{% url 're_read_residents' %}" target="_blank">Read</a>
                     </div>
                 </div>
                 <div id="re_res-edit-form" style="display:none;">
-                    <h2>Edit resident from residencies_residents</h2>
-                    <form method="post" action="re_edit_residencies/">
+                    <h2>Edit resident from residence_residents</h2>
+                    <form method="post" action="re_edit_residents/">
                         {% csrf_token %}
                         <input type="number" class="input input-text" name="id" placeholder="id" required>
                         <input type="text" class="input input-text" name="first_name" placeholder="first name"
@@ -573,12 +573,12 @@
                     <div style="font-size: 18px; font-style:oblique;">
                         <a href="#" onclick="RE_RESshowAddForm()">Add</a> |
                         <a href="#" onclick="RE_RESshowDeleteForm()">Delete</a> |
-                        <a href="{% url 're_read_residencies' %}" target="_blank">Read</a>
+                        <a href="{% url 're_read_residents' %}" target="_blank">Read</a>
                     </div>
                 </div>
                 <div id="re_res-delete-form" style="display:none;">
-                    <h2>Delete resident from residencies_residents</h2>
-                    <form method="post" action="re_delete_residencies/">
+                    <h2>Delete resident from residence_residents</h2>
+                    <form method="post" action="re_delete_resident/">
                         {% csrf_token %}
                         <input type="number" class="input input-text" name="id" placeholder="id" required>
                         <input type="submit" class="button-style button-submit" value="Delete">
@@ -586,12 +586,12 @@
                     <div style="font-size: 18px; font-style:oblique;">
                         <a href="#" onclick="RE_RESshowAddForm()">Add</a> |
                         <a href="#" onclick="RE_RESshowEditForm()">Edit</a> |
-                        <a href="{% url 're_read_residencies' %}" target="_blank">Read</a>
+                        <a href="{% url 're_read_residents' %}" target="_blank">Read</a>
                     </div>
                 </div>
             </div>
             <button class="button-close"
-                onclick="document.getElementById('residencies_popup').style.display = 'none';">Close</button>
+                onclick="document.getElementById('residence_popup').style.display = 'none';">Close</button>
         </div>
         <div id="prayer_popup"
             style="display:none;position:absolute;top:50%;left:50%;transform:translate(-50%, -50%);background-color:#eceaea;padding:10px;border-radius:6px;z-index: 1; border: 1px solid black; width: 280px; max-height: 440px; overflow-y: auto; justify-content: center; font-size: 12px;">
@@ -1485,7 +1485,7 @@
     <!-- </div>
     </div> -->
     <style>
-        #residencies_popup::-webkit-scrollbar,
+        #residence_popup::-webkit-scrollbar,
         #supermarket_popup::-webkit-scrollbar,
         #prayer_popup::-webkit-scrollbar,
         #bank_popup::-webkit-scrollbar,
@@ -1495,7 +1495,7 @@
             width: 8px;
         }
 
-        #residencies_popup::-webkit-scrollbar-track,
+        #residence_popup::-webkit-scrollbar-track,
         #supermarket_popup::-webkit-scrollbar-track,
         #prayer_popup::-webkit-scrollbar-track,
         #bank_popup::-webkit-scrollbar-track,
@@ -1505,7 +1505,7 @@
             background-color: #413c3c;
         }
 
-        #residencies_popup::-webkit-scrollbar-thumb,
+        #residence_popup::-webkit-scrollbar-thumb,
         #supermarket_popup::-webkit-scrollbar-thumb,
         #prayer_popup::-webkit-scrollbar-thumb,
         #bank_popup::-webkit-scrollbar-thumb,

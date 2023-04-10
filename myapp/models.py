@@ -116,7 +116,7 @@ class PR_Prayer(models.Model):
         db_table = 'pr_prayer'
 
 
-# RESIDENCIES
+# RESIDENCE
 class RE_Apartments(models.Model):
     id = models.AutoField(primary_key=True)
     building_name = models.TextField(blank=True, null=True)

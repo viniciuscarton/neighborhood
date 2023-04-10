@@ -29,7 +29,7 @@ from .models import SC_LibraryLoans
 
 def index(request):
     counts = {
-        '🧔 Residents 🧔': RE_Residents.objects.using('residencies').count(),
+        '🧔 Residents 🧔': RE_Residents.objects.using('residence').count(),
         '🎓 Students 🎓': SC_Students.objects.using('default').count(),
         '📖 Library Loans 📖': SC_LibraryLoans.objects.using('default').count(),
         '💸 Bank Accounts 💸': BA_Accounts.objects.using('bank').count(),
@@ -261,7 +261,7 @@ def sm_edit_employees(request):
     context = {}
     return render(request,'', context)
 
-# RESIDENCIES HOUSES
+# RESIDENCE HOUSES
 def re_add_houses(request):
     if request.method == 'POST':
         address = request.POST.get('address')
@@ -270,7 +270,7 @@ def re_add_houses(request):
         monthly_rent = request.POST.get('monthly_rent')
         occupied = request.POST.get('occupied') == 'on'
 
-        RE_Houses.objects.using('residencies').create(
+        RE_Houses.objects.using('residence').create(
             address = address,
             number_of_rooms = number_of_rooms,
             area = area,
@@ -280,20 +280,20 @@ def re_add_houses(request):
         return redirect('index')
 
 def re_read_houses(request):
-    houses = RE_Houses.objects.using('residencies').order_by('id')
+    houses = RE_Houses.objects.using('residence').order_by('id')
     context = {'houses': houses}
     return render(request, 'read_templates/re_read_houses.html', context)
 
 def re_delete_houses(request):
     if request.method == 'POST':
         id = request.POST.get('id')
-        RE_Houses.objects.using('residencies').filter(id=id).delete()
+        RE_Houses.objects.using('residence').filter(id=id).delete()
         return redirect('index')
 
 def re_edit_houses(request):
     if request.method == 'POST':
         id = request.POST['id']
-        houses= RE_Houses.objects.using('residencies').get(id=id)
+        houses= RE_Houses.objects.using('residence').get(id=id)
 
         address = request.POST.get('address')
         number_of_rooms = request.POST.get('number_of_rooms')
@@ -316,7 +316,7 @@ def re_edit_houses(request):
     context = {}
     return render(request,'', context)
 
-# RESIDENCIES APARTMENTS
+# RESIDENCE APARTMENTS
 def re_add_apartments(request):
     if request.method == 'POST':
         address = request.POST.get('address')
@@ -327,7 +327,7 @@ def re_add_apartments(request):
         monthly_rent = request.POST.get('monthly_rent')
         occupied = request.POST.get('occupied') == 'on'
 
-        RE_Apartments.objects.using('residencies').create(
+        RE_Apartments.objects.using('residence').create(
             address = address,
             building_name = building_name,
             apartment_number =  apartment_number,
@@ -339,20 +339,20 @@ def re_add_apartments(request):
         return redirect('index')
 
 def re_read_apartments(request):
-    apartments = RE_Apartments.objects.using('residencies').order_by('id')
+    apartments = RE_Apartments.objects.using('residence').order_by('id')
     context = {'apartments':apartments}
     return render(request, 'read_templates/re_read_apartments.html', context)
 
 def re_delete_apartments(request):
     if request.method == 'POST':
         id = request.POST.get('id')
-        RE_Apartments.objects.using('residencies').filter(id=id).delete()
+        RE_Apartments.objects.using('residence').filter(id=id).delete()
         return redirect('index')
 
 def re_edit_apartments(request):
     if request.method == 'POST':
         id = request.POST['id']
-        apartments= RE_Apartments.objects.using('residencies').get(id=id)
+        apartments= RE_Apartments.objects.using('residence').get(id=id)
 
         address = request.POST.get('address')
         building_name = request.POST.get('building_name')
@@ -381,8 +381,8 @@ def re_edit_apartments(request):
     context = {}
     return render(request,'', context)
 
-# RESIDENCIES RESIDENTS
-def re_add_residencies(request):
+# RESIDENCE RESIDENTS
+def re_add_residents(request):
     if request.method == 'POST':
         first_name = request.POST.get('first_name')
         family_name = request.POST.get('family_name')
@@ -396,13 +396,13 @@ def re_add_residencies(request):
         propertyid = request.POST.get('propertyid')
 
         if property_type == 'house':
-            if not RE_Houses.objects.using('residencies').filter(id=propertyid).exists():
+            if not RE_Houses.objects.using('residence').filter(id=propertyid).exists():
                 return HttpResponse('Invalid house ID')
         elif property_type == 'apartment':
-            if not RE_Apartments.objects.using('residencies').filter(id=propertyid).exists():
+            if not RE_Apartments.objects.using('residence').filter(id=propertyid).exists():
                 return HttpResponse('Invalid apartment ID')
 
-        RE_Residents.objects.using('residencies').create(
+        RE_Residents.objects.using('residence').create(
             first_name = first_name,
             family_name = family_name,
             email = email,
@@ -416,21 +416,21 @@ def re_add_residencies(request):
         )
         return redirect('index')
 
-def re_read_residencies(request):
-    residents = RE_Residents.objects.using('residencies').order_by('id')
+def re_read_residents(request):
+    residents = RE_Residents.objects.using('residence').order_by('id')
     context = {'residents':residents}
     return render(request, 'read_templates/re_read_residents.html', context)
 
-def re_delete_residencies(request):
+def re_delete_residents(request):
     if request.method == 'POST':
         id = request.POST.get('id')
-        RE_Residents.objects.using('residencies').filter(id=id).delete()
+        RE_Residents.objects.using('residence').filter(id=id).delete()
         return redirect('index')
 
-def re_edit_residencies(request):
+def re_edit_residents(request):
     if request.method == 'POST':
         id = request.POST['id']
-        residents= RE_Residents.objects.using('residencies').get(id=id)
+        residents= RE_Residents.objects.using('residence').get(id=id)
 
         first_name = request.POST.get('first_name')
         family_name = request.POST.get('family_name')

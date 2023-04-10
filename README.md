@@ -1,6 +1,8 @@
 # Neighborhood
 Neighborhood is a database management system, built with Django. It has a user-friendly interface for basic CRUD operations. Its purpose is to provide broad management of several databases in a neighborhood scenario.
 
+	 ❗ Before running Neighborhood, set a SECRET_KEY in settings.py ❗
+
 ## Default interface
 The default interface consists of a [neighborhood map](https://icograms.com) with a school, a drugstore, three religious sites, a bank, houses, apartments, a gym, and a supermarket. Each of these entities represents a potential use case for a database system.
 

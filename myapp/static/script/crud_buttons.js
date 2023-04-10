@@ -74,7 +74,7 @@ function SM_EMPshowDeleteForm() {
     document.getElementById("sm_emp-delete-form").style.display = "block";
 }
 
-// RESIDENCIES_HOUSES
+// RESIDENCE_HOUSES
 function RE_HOUshowAddForm() {
     document.getElementById("re_hou-add-form").style.display = "block";
     document.getElementById("re_hou-edit-form").style.display = "none";
@@ -93,7 +93,7 @@ function RE_HOUshowDeleteForm() {
     document.getElementById("re_hou-delete-form").style.display = "block";
 }
 
-// RESIDENCIES_APARTMENTS
+// RESIDENCE_APARTMENTS
 function RE_APTshowAddForm() {
     document.getElementById("re_apt-add-form").style.display = "block";
     document.getElementById("re_apt-edit-form").style.display = "none";
@@ -112,7 +112,7 @@ function RE_APTshowDeleteForm() {
     document.getElementById("re_apt-delete-form").style.display = "block";
 }
 
-// RESIDENCIES_RESIDENTS
+// RESIDENCE_RESIDENTS
 function RE_RESshowAddForm() {
     document.getElementById("re_res-add-form").style.display = "block";
     document.getElementById("re_res-edit-form").style.display = "none";
