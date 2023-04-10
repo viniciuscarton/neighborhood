@@ -1,0 +1,26 @@
+<link href="https://fonts.googleapis.com/css?family=Merriweather:400,400i,700,700i&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="../static/css/tables.css" />
+<table>
+    <h1>Gym_Customers</h1>
+      <thead>
+        <tr>
+          <th>Id</th>
+          <th>Name</th>
+          <th>Age</th>
+          <th>Membership start</th>
+          <th>Membership end</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for item in customers %}
+          <tr>
+            <td>{{ item.id }}</td>
+            <td>{{ item.name }}</td>
+            <td>{{ item.age }}</td>
+            <td>{{ item.membership_start}}</td>
+            <td>{{ item.membership_end}}</td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+    

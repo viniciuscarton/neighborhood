@@ -1,0 +1,24 @@
+<link href="https://fonts.googleapis.com/css?family=Merriweather:400,400i,700,700i&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="../static/css/tables.css" />
+<table>
+    <h1>Bank_Accounts</h1>
+      <thead>
+        <tr>
+          <th>Id</th>
+          <th>Number</th>
+          <th>Balance</th>
+          <th>Customer ID</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for item in accounts %}
+          <tr>
+            <td>{{ item.id }}</td>
+            <td>{{ item.number }}</td>
+            <td>{{ item.balance }}</td>
+            <td>{{ item.customerid.id }}</td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+    

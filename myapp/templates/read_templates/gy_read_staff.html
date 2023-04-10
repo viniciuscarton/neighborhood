@@ -1,0 +1,28 @@
+<link href="https://fonts.googleapis.com/css?family=Merriweather:400,400i,700,700i&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="../static/css/tables.css" />
+<table>
+    <h1>Gym_Staff</h1>
+      <thead>
+        <tr>
+          <th>Id</th>
+          <th>Name</th>
+          <th>Age</th>
+          <th>Hire date</th>
+          <th>Salary</th>
+          <th>Shift ID</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for item in staff %}
+          <tr>
+            <td>{{ item.id}}</td>
+            <td>{{ item.name}}</td>
+            <td>{{ item.age}}</td>
+            <td>{{ item.hire_date}}</td>
+            <td>{{ item.salary}}</td>
+            <td>{{ item.shiftid.id}}</td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+    

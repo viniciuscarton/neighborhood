@@ -1,0 +1,26 @@
+<link href="https://fonts.googleapis.com/css?family=Merriweather:400,400i,700,700i&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="../static/css/tables.css" />
+<table>
+    <h1>School_Library-Loans</h1>
+      <thead>
+        <tr>
+          <th>Id</th>
+          <th>member id</th>
+          <th>book id</th>
+          <th>borrowed_date</th>
+          <th>return date</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for item in libraryloans %}
+          <tr>
+            <td>{{ item.id }}</td>
+            <td>{{ item.memberid.id }}</td>
+            <td>{{ item.bookid.id }}</td>
+            <td>{{ item.borrowed_date }}</td>
+            <td>{{ item.return_date}}</td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+    

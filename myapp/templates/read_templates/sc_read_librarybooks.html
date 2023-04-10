@@ -1,0 +1,28 @@
+<link href="https://fonts.googleapis.com/css?family=Merriweather:400,400i,700,700i&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="../static/css/tables.css" />
+<table>
+    <h1>School_Library-Books</h1>
+      <thead>
+        <tr>
+          <th>Id</th>
+          <th>Title</th>
+          <th>Author Name</th>
+          <th>Genre Number</th>
+          <th>ISBN</th>
+          <th>Publication Date</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for item in librarybooks %}
+          <tr>
+            <td>{{ item.id }}</td>
+            <td>{{ item.title }}</td>
+            <td>{{ item.author }}</td>
+            <td>{{ item.genre }}</td>
+            <td>{{ item.isbn }}</td>
+            <td>{{ item.publication_date }}</td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+    

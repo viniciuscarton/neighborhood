@@ -1,0 +1,24 @@
+<link href="https://fonts.googleapis.com/css?family=Merriweather:400,400i,700,700i&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="../static/css/tables.css"/>
+<table>
+    <h1>Supermarket_Shifts</h1>
+      <thead>
+        <tr>
+          <th>Id</th>
+          <th>Start</th>
+          <th>Hour</th>
+          <th>Worhours</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for item in shifts %}
+          <tr>
+            <td>{{ item.id }}</td>
+            <td>{{ item.start }}</td>
+            <td>{{ item.hour }}</td>
+            <td>{{ item.workhours }}</td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+    

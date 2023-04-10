@@ -1,0 +1,26 @@
+<link href="https://fonts.googleapis.com/css?family=Merriweather:400,400i,700,700i&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="../static/css/tables.css" />
+<table>
+    <h1>Drugstore_Storage</h1>
+      <thead>
+        <tr>
+          <th>Id</th>
+          <th>Item</th>
+          <th>Quantity</th>
+          <th>Exp. date</th>
+          <th>Supplier ID</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for item in storage %}
+          <tr>
+            <td>{{ item.id }}</td>
+            <td>{{ item.item }}</td>
+            <td>{{ item.quantity }}</td>
+            <td>{{ item.exp_date }}</td>
+            <td>{{ item.supplierid.id}}</td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+    

@@ -1,0 +1,38 @@
+<link href="https://fonts.googleapis.com/css?family=Merriweather:400,400i,700,700i&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="../static/css/tables.css" />
+<table>
+    <h1>Residencies_Residents</h1>
+      <thead>
+        <tr>
+          <th>Id</th>
+          <th>First name</th>
+          <th>Family name</th>
+          <th>Email</th>
+          <th>Phone</th>
+          <th>Age</th>
+          <th>Sex</th>
+          <th>Occupation</th>
+          <th>Religion</th>
+          <th>Property Type</th>
+          <th>Property ID</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for item in residents %}
+          <tr>
+            <td>{{ item.id }}</td>
+            <td>{{ item.first_name }}</td>
+            <td>{{ item.family_name }}</td>
+            <td>{{ item.email }}</td>
+            <td>{{ item.phone }}</td>
+            <td>{{ item.age }}</td>
+            <td>{{ item.sex }}</td>
+            <td>{{ item.occupation}}</td>
+            <td>{{ item.religion}}</td>
+            <td>{{ item.property_type}}</td>
+            <td>{{ item.propertyid}}</td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+    

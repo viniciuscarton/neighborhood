@@ -1,0 +1,1525 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neighborhood</title>
+    <link rel="stylesheet" type="text/css" href="static/css/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,400i,700,700i&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div style="background-color: rgba(246,246,246,255); width: 100%; justify-content: center">
+        <img class="map" src="static/images/map4.png" usemap="#image-map" style="position: relative; z-index: 0;">
+        <map name="image-map">
+            <area id="supermarket" target="" alt="Supermarket" title="Supermarket" href="#"
+                coords="153,68,234,28,337,79,339,119,264,163,153,112" shape="poly">
+            <area id="house1" target="" alt="House1" title="House1" href="#"
+                coords="56,180,74,187,108,174,94,150,58,164" shape="poly">
+            <area id="house2" target="" alt="House2" title="House2" href="#" coords="120,168,148,152,139,125,103,144"
+                shape="poly">
+            <area id="house3" target="" alt="House3" title="House3" href="#"
+                coords="121,210,119,197,158,178,170,203,141,219,133,216" shape="poly">
+            <area id="house4" target="" alt="House4" title="House4" href="#"
+                coords="166,175,202,157,212,167,214,183,179,196" shape="poly">
+            <area id="prayer_site1" target="" alt="Church1" title="Church1" href="#"
+                coords="221,265,250,249,249,227,235,175,193,197,178,223,179,243" shape="poly">
+            <area id="house5" alt="House5" title="House5" href="#"
+                coords="265,205,263,191,272,177,311,196,310,211,293,220" shape="poly">
+            <area id="house6" target="" alt="House6" title="House6" href="#"
+                coords="333,197,355,189,353,175,315,157,307,171,308,182" shape="poly">
+            <area id="house7" target="" alt="House7" title="House7" href="#"
+                coords="376,176,397,167,397,153,356,137,347,150,350,165" shape="poly">
+            <area id="house8" target="" alt="House8" title="House8" href="#"
+                coords="347,246,365,236,365,223,325,205,315,217,318,229" shape="poly">
+            <area id="house9" target="" alt="House9" title="House9" href="#"
+                coords="389,226,408,216,408,202,365,183,359,198,358,209" shape="poly">
+            <area id="house10" target="" alt="House10" title="House10" href="#"
+                coords="431,203,449,195,449,180,410,162,399,176,401,189" shape="poly">
+            <area id="house11" target="" alt="House11" title="House11" href="#"
+                coords="368,256,368,245,377,231,419,250,417,261,397,274" shape="poly">
+            <area id="house12" target="" alt="House12" title="House12" href="#"
+                coords="411,236,412,223,421,210,459,229,461,239,441,251" shape="poly">
+            <area id="house13" target="" alt="House13" title="House13" href="#"
+                coords="484,231,502,220,502,208,463,188,454,203,456,217" shape="poly">
+            <area id="house14" target="" alt="House14" title="House14" href="#"
+                coords="450,298,470,290,469,278,430,258,421,269,421,283" shape="poly">
+            <area id="house15" target="" alt="House15" title="House15" href="#"
+                coords="493,276,513,266,511,255,475,237,463,250,464,264" shape="poly">
+            <area id="house16" target="" alt="House16" title="House16" href="#"
+                coords="535,257,555,246,555,233,516,215,506,230,505,242" shape="poly">
+            <area id="house17" target="" alt="House17" title="House17" href="#"
+                coords="545,304,566,293,565,281,525,264,514,275,515,288" shape="poly">
+            <area id="house18" target="" alt="House18" title="House18" href="#"
+                coords="524,314,524,302,483,282,472,296,475,311,506,320" shape="poly">
+            <area id="house19" target="" alt="House19" title="House19" href="#"
+                coords="586,281,609,274,609,261,569,243,559,255,559,269" shape="poly">
+            <area id="school1" target="" alt="School" title="School" href="#"
+                coords="273,272,295,282,296,291,316,302,328,299,357,314,380,278,339,248,326,249,294,234,273,245"
+                shape="poly">
+            <area id="school2" target="" alt="School" title="School" href="#"
+                coords="387,330,414,319,412,291,391,280,370,294,370,320" shape="poly">
+            <area id="prayer_site2" target="" alt="Church2" title="Church2" href="#"
+                coords="419,354,419,331,437,302,506,332,513,348,513,361,509,370,499,380,482,382" shape="poly">
+            <area id="apartment1" target="" alt="Apartment1" title="Apartment1" href="#"
+                coords="400,126,441,150,462,141,460,77,420,55,404,63" shape="poly">
+            <area id="apartment2" target="" alt="Apartment2" title="Apartment2" href="#"
+                coords="465,158,506,180,524,171,520,106,484,89,465,96" shape="poly">
+            <area id="apartment3" target="" alt="Apartment3" title="Apartment3" href="#"
+                coords="589,203,567,214,527,190,528,129,545,119,587,140" shape="poly">
+            <area id="apartment4" target="" alt="Apartment4" title="Apartment4" href="#"
+                coords="593,223,631,243,650,235,652,173,611,151,593,161" shape="poly">
+            <area id="prayer_site3" target="" alt="Church3" title="Church3" href="#"
+                coords="653,251,653,233,661,230,657,199,667,182,677,201,678,211,710,194,728,227,724,243,682,267,669,262,658,259"
+                shape="poly">
+            <area id="house20" target="" alt="House20" title="House20" href="#"
+                coords="468,427,468,413,476,400,519,417,498,441" shape="poly">
+            <area id="house21" target="" alt="House21" title="House21" href="#"
+                coords="539,462,512,446,512,432,522,419,557,441" shape="poly">
+            <area id="house22" target="" alt="House22" title="House22" href="#"
+                coords="555,470,581,483,602,473,603,461,563,443,553,453" shape="poly">
+            <area id="gym" target="" alt="Gym" title="Gym" href="#"
+                coords="525,406,525,383,552,359,563,362,613,388,612,412,577,432" shape="poly">
+            <area id="house23" target="" alt="House23" title="House23" href="#"
+                coords="563,351,563,341,573,325,612,344,595,367" shape="poly">
+            <area id="house24" target="" alt="House24" title="House24" href="#"
+                coords="605,375,606,361,615,346,657,366,654,378,637,388" shape="poly">
+            <area id="house25" target="" alt="House25" title="House25" href="#"
+                coords="608,331,607,320,614,303,653,323,637,349" shape="poly">
+            <area id="house26" target="" alt="House26" title="House26" href="#"
+                coords="677,369,700,359,699,342,656,325,651,340,649,351" shape="poly">
+            <area id="house27" target="" alt="House27" title="House27" href="#"
+                coords="718,346,742,338,742,323,700,306,691,320,690,332" shape="poly">
+            <area id="house28" target="" alt="House28" title="House28" href="#"
+                coords="679,325,697,303,655,281,648,297,649,312" shape="poly">
+            <area id="apartment5" target="" alt="Apartment5" title="Apartment5" href="#"
+                coords="634,458,656,449,651,405,635,396,616,409,613,446" shape="poly">
+            <area id="apartment6" target="" alt="Apartment6" title="Apartment6" href="#"
+                coords="679,439,698,425,699,387,679,376,657,386,656,428" shape="poly">
+            <area id="apartment7" target="" alt="Apartment7" title="Apartment7" href="#"
+                coords="702,411,702,364,721,353,739,365,740,409" shape="poly">
+            <area id="apartment8" target="" alt="Apartment8" title="Apartment8" href="#"
+                coords="760,393,783,385,781,343,761,332,741,343,742,383" shape="poly">
+            <area id="apartment9" target="" alt="Apartment9" title="Apartment9" href="#"
+                coords="805,371,825,362,824,322,804,310,784,320,784,361" shape="poly">
+            <area id="apartment10" target="" alt="Apartment10" title="Apartment10" href="#"
+                coords="847,350,867,340,868,302,847,292,828,301,827,343" shape="poly">
+            <area id="drugstore" target="" alt="Drugstore" title="Drugstore" href="#"
+                coords="634,540,678,520,676,480,635,459,596,480,598,522" shape="poly">
+            <area id="bank" target="" alt="Bank" title="Bank" href="#"
+                coords="806,531,852,507,849,460,724,401,693,429,693,474,720,489,712,499,754,522,773,515" shape="poly">
+            <area id="house29" target="" alt="House29" title="House29" href="#"
+                coords="772,388,813,407,794,429,759,415,763,404" shape="poly">
+            <area id="house30" target="" alt="House30" title="House30" href="#"
+                coords="834,452,805,437,807,424,815,410,856,429" shape="poly">
+            <area id="house31" target="" alt="House31" title="House31" href="#"
+                coords="878,472,847,455,849,446,858,430,897,450" shape="poly">
+            <area id="house32" target="" alt="House32" title="House32" href="#"
+                coords="893,479,892,466,902,453,939,470,941,487,920,493" shape="poly">
+            <area id="house33" target="" alt="House33" title="House33" href="#"
+                coords="961,471,986,462,983,449,942,429,935,445,932,458" shape="poly">
+            <area id="house34" target="" alt="House34" title="House34" href="#"
+                coords="920,452,890,439,890,422,902,409,938,429" shape="poly">
+            <area id="house35" target="" alt="House35" title="House35" href="#"
+                coords="879,432,847,414,849,402,858,387,899,408" shape="poly">
+            <area id="house36" target="" alt="House36" title="House36" href="#"
+                coords="835,408,807,397,804,381,816,366,857,388" shape="poly">
+            <area id="house37" target="" alt="House37" title="House37" href="#"
+                coords="998,452,1021,442,1020,427,981,410,970,424,973,435" shape="poly">
+            <area id="house38" target="" alt="House38" title="House38" href="#"
+                coords="957,430,978,411,938,388,929,401,928,415" shape="poly">
+            <area id="house39" target="" alt="House39" title="House39" href="#"
+                coords="884,394,884,380,894,367,931,387,916,410" shape="poly">
+            <area id="house40" target="" alt="House40" title="House40" href="#"
+                coords="875,388,892,366,853,346,844,362,842,374" shape="poly">
+        </map>
+        <div>
+            <table
+                style="position: absolute; top: 20px; right: 20px; background-color: #eceaea56; border-radius: 4px; border: 1px solid black; padding: 5px; font-size: 12px;">
+                <thead>
+                    <tr>
+                        <th style="padding: 7px;">Neighborhood</th>
+                        <th style="padding: 7px;">#</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for model, count in counts.items %}
+                    <tr style="border: 1px solid black">
+                        <td style="padding: 7px;background-color: beige; border: 1px solid black; border-radius: 4px;">
+                            {{ model }}</td>
+                        <td style="padding: 7px; background-color: beige; border: 1px solid black; border-radius: 4px;">
+                            {{ count }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+        <div id="supermarket_popup"
+            style="display:none;position:absolute;top:50%;left:50%;transform:translate(-50%, -50%);background-color:#eceaea;padding:10px;border-radius:6px;z-index: 1; border: 1px solid black; width: 280px; max-height: 440px; overflow-y: auto; justify-content: center; font-size: 12px;">
+            <button id="btn-inventory" class="button-style">Inventory</button>
+            <button id="btn-functions" class="button-style">Functions</button>
+            <button id="btn-shifts" class="button-style">Shifts</button>
+            <button id="btn-employees" class="button-style">Employees</button>
+            <div id="SM-INVENTORY">
+                <div id="sm_inv-add-form">
+                    <h2>Add item to supermarket_inventory</h2>
+                    <form method="post" action="sm_add_inventory/">
+                        {% csrf_token %}
+                        <input type="text" class="input input-text" name="item" placeholder="item" required><br>
+                        <input type="number" class="input input-text" name="quantity" placeholder="qt." required><br>
+                        <label for="entry_date">entry date</label><br>
+                        <input type="date" id="entry_date" class="input input-date" name="entry_date" required><br>
+                        <label for="exp_date">exp. date</label><br>
+                        <input type="date" id="exp_date" class="input input-date" name="exp_date" required><br>
+                        <label for="kosher">kosher</label>
+                        <input type="checkbox" id="kosher" name="kosher"><br>
+                        <input type="submit" class="button-style button-submit" value="Submit">
+                    </form>
+                    <div style="font-size: 18px; font-style:oblique;">
+                        <a href="#" onclick="SM_INVshowEditForm()">Edit</a> |
+                        <a href="#" onclick="SM_INVshowDeleteForm()">Delete</a> |
+                        <a href="{% url 'sm_read_inventory' %}" target="_blank">Read</a>
+                    </div>
+                </div>
+                <div id="sm_inv-edit-form" style="display:none;">
+                    <h2>Edit item from supermarket inventory</h2>
+                    <form method="post" action="sm_edit_inventory/">
+                        {% csrf_token %}
+                        <input type="text" class="input input-text" name="id" placeholder="id" required>
+                        <input type="text" class="input input-text" name="item" placeholder="item" required><br>
+                        <input type="number" class="input input-text" name="quantity" placeholder="qt." required><br>
+                        <label for="entry_date">entry date</label><br>
+                        <input type="date" id="entry_date" class="input input-date" name="entry_date" required><br>
+                        <label for="exp_date">exp. date</label><br>
+                        <input type="date" id="exp_date" class="input input-date" name="exp_date" required><br>
+                        <label for="kosher">kosher</label>
+                        <input type="checkbox" id="kosher" name="kosher"><br>
+                        <input type="submit" class="button-style button-submit" value="Submit">
+                    </form>
+                    <div style="font-size: 18px; font-style:oblique;">
+                        <a href="#" onclick="SM_INVshowAddForm()">Add</a> |
+                        <a href="#" onclick="SM_INVshowDeleteForm()">Delete</a> |
+                        <a href="{% url 'sm_read_inventory' %}" target="_blank">Read</a>
+                    </div>
+                </div>
+                <div id="sm_inv-delete-form" style="display:none;">
+                    <h2>Delete item from supermarket_inventory</h2>
+                    <form method="post" action="sm_delete_inventory/">
+                        {% csrf_token %}
+                        <input type="text" class="input input-text" name="id" placeholder="id" required>
+                        <input type="submit" class="button-style button-submit" value="Delete">
+                    </form>
+                    <div style="font-size: 18px; font-style:oblique;">
+                        <a href="#" onclick="SM_INVshowAddForm()">Add</a> |
+                        <a href="#" onclick="SM_INVshowEditForm()">Edit</a> |
+                        <a href="{% url 'sm_read_inventory' %}" target="_blank">Read</a>
+                    </div>
+                </div>
+            </div>
+            <div id="SM-FUNCTIONS">
+                <div id="sm_fun-add-form">
+                    <h2>Add function to supermarket_functions</h2>
+                    <form method="post" action="sm_add_functions/">
+                        {% csrf_token %}
+                        <input type="text" class="input input-text" name="name" placeholder="f. name" required><br>
+                        <input type="text" class="input input-text" name="workload" placeholder="f. workload"
+                            required><br>
+                        <input type="text" class="input input-text" name="location" placeholder="f. location"
+                            required><br>
+                        <input type="submit" class="button-style button-submit" value="Submit">
+                    </form>
+                    <div style="font-size: 18px; font-style:oblique;">
+                        <a href="#" onclick="SM_FUNshowEditForm()">Edit</a> |
+                        <a href="#" onclick="SM_FUNshowDeleteForm()">Delete</a> |
+                        <a href="{% url 'sm_read_functions' %}" target="_blank">Read</a>
+                    </div>
+                </div>
+                <div id="sm_fun-edit-form" style="display:none;">
+                    <h2>Edit function from supermarket_functions</h2>
+                    <form method="post" action="sm_edit_functions/">
+                        {% csrf_token %}
+                        <input type="text" class="input input-text" name="id" placeholder="id" required><br>
+                        <input type="text" class="input input-text" name="name" placeholder="f. name" required><br>
+                        <input type="text" class="input input-text" name="workload" placeholder="f. workload"
+                            required><br>
+                        <input type="text" class="input input-text" name="location" placeholder="f. location"
+                            required><br>
+                        <input type="submit" class="button-style button-submit" value="Submit">
+                    </form>
+                    <div style="font-size: 18px; font-style:oblique;">
+                        <a href="#" onclick="SM_FUNshowAddForm()">Add</a> |
+                        <a href="#" onclick="SM_FUNshowDeleteForm()">Delete</a> |
+                        <a href="{% url 'sm_read_functions' %}" target="_blank">Read</a>
+                    </div>
+                </div>
+                <div id="sm_fun-delete-form" style="display:none;">
+                    <h2>Delete function from supermarket_functions</h2>
+                    <form method="post" action="sm_delete_functions/">
+                        {% csrf_token %}
+                        <input type="text" class="input input-text" name="id" placeholder="id" required><br>
+                        <input type="submit" class="button-style button-submit" value="Delete">
+                    </form>
+                    <div style="font-size: 18px; font-style:oblique;">
+                        <a href="#" onclick="SM_FUNshowAddForm()">Add</a> |
+                        <a href="#" onclick="SM_FUNshowEditForm()">Edit</a> |
+                        <a href="{% url 'sm_read_functions' %}" target="_blank">Read</a>
+                    </div>
+                </div>
+            </div>
+            <div id="SM-SHIFTS">
+                <div id="sm_shf-add-form">
+                    <h2>Add shift to supermarket_shifts</h2>
+                    <form method="post" action="sm_add_shifts/">
+                        {% csrf_token %}
+                        <label for="start">start date</label><br>
+                        <input type="date" class="input input-date" id="start" name="start" required><br>
+                        <input type="number" class="input input-text" name="hour" placeholder="hour" required><br>
+                        <input type="number" class="input input-text" name="workhours" placeholder="workhours"
+                            required><br>
+                        <input type="submit" class="button-style button-submit" value="Submit">
+                    </form>
+                    <div style="font-size: 18px; font-style:oblique;">
+                        <a href="#" onclick="SM_SHFshowEditForm()">Edit</a> |
+                        <a href="#" onclick="SM_SHFshowDeleteForm()">Delete</a> |
+                        <a href="{% url 'sm_read_shifts' %}" target="_blank">Read</a>
+                    </div>
+                </div>
+                <div id="sm_shf-edit-form" style="display:none;">
+                    <h2>Edit shift from supermarket_shifts</h2>
+                    <form method="post" action="sm_edit_shifts/">
+                        {% csrf_token %}
+                        <input type="number" class="input input-text" name="id" placeholder="id" required><br>
+                        <label for="start">start date</label><br>
+                        <input type="date" class="input input-date" id="start" name="start" required><br>
+                        <input type="number" class="input input-text" name="hour" placeholder="hour" required><br>
+                        <input type="number" class="input input-text" name="workhours" placeholder="workhours"
+                            required><br>
+                        <input type="submit" class="button-style button-submit" value="Submit">
+                    </form>
+                    <div style="font-size: 18px; font-style:oblique;">
+                        <a href="#" onclick="SM_SHFshowAddForm()">Add</a> |
+                        <a href="#" onclick="SM_SHFshowDeleteForm()">Delete</a> |
+                        <a href="{% url 'sm_read_shifts' %}" target="_blank">Read</a>
+                    </div>
+                </div>
+                <div id="sm_shf-delete-form" style="display:none;">
+                    <h2>Delete shift from supermarket_shifts</h2>
+                    <form method="post" action="sm_delete_shifts/">
+                        {% csrf_token %}
+                        <input type="number" class="input input-text" name="id" placeholder="id" required><br>
+                        <input type="submit" class="button-style button-submit" value="Delete">
+                    </form>
+                    <div style="font-size: 18px; font-style:oblique;">
+                        <a href="#" onclick="SM_SHFshowAddForm()">Add</a> |
+                        <a href="#" onclick="SM_SHFshowEditForm()">Edit</a> |
+                        <a href="{% url 'sm_read_shifts' %}" target="_blank">Read</a>
+                    </div>
+                </div>
+            </div>
+            <div id="SM-EMPLOYEES">
+                <div id="sm_emp-add-form">
+                    <h2>Add employee to supermarket_employees</h2>
+                    <form method="post" action="sm_add_employees/">
+                        {% csrf_token %}
+                        <input type="text" class="input input-text" name="name" placeholder="name" required><br>
+                        <input type="number" class="input input-text" name="age" placeholder="age" required><br>
+                        <input type="text" class="input input-text" name="phone" placeholder="phone" required><br>
+                        <label for="hire_date">hire date</label><br>
+                        <input type="date" class="input input-date" id="hire_date" name="hire_date" required><br>
+                        <input type="number" class="input input-text" name="salary" placeholder="salary" required><br>
+                        <input type="number" class="input input-text" name="functionid" placeholder="function id"
+                            required><br>
+                        <input type="number" class="input input-text" name="shiftid" placeholder="shift id"
+                            required><br>
+                        <input type="submit" class="button-style button-submit" value="Submit">
+                    </form>
+                    <div style="font-size: 18px; font-style:oblique;">
+                        <a href="#" onclick="SM_EMPshowEditForm()">Edit</a> |
+                        <a href="#" onclick="SM_EMPshowDeleteForm()">Delete</a> |
+                        <a href="{% url 'sm_read_employees' %}" target="_blank">Read</a>
+                    </div>
+                </div>
+                <div id="sm_emp-edit-form" style="display:none;">
+                    <h2>Edit employee from supermarket_employees</h2>
+                    <form method="post" action="sm_edit_employees/">
+                        {% csrf_token %}
+                        <input type="text" class="input input-text" name="id" placeholder="id" required><br>
+                        <input type="text" class="input input-text" name="name" placeholder="name" required><br>
+                        <input type="number" class="input input-text" name="age" placeholder="age" required><br>
+                        <input type="text" class="input input-text" name="phone" placeholder="phone" required><br>
+                        <label for="hire_date">hire date</label><br>
+                        <input type="date" class="input input-date" id="hire_date" name="hire_date" required><br>
+                        <input type="number" class="input input-text" name="salary" placeholder="salary" required><br>
+                        <input type="number" class="input input-text" name="functionid" placeholder="function id"
+                            required><br>
+                        <input type="number" class="input input-text" name="shiftid" placeholder="shift id"
+                            required><br>
+                        <input type="submit" class="button-style button-submit" value="Submit">
+                    </form>
+                    <div style="font-size: 18px; font-style:oblique;">
+                        <a href="#" onclick="SM_EMPshowAddForm()">Add</a> |
+                        <a href="#" onclick="SM_EMPshowDeleteForm()">Delete</a> |
+                        <a href="{% url 'sm_read_employees' %}" target="_blank">Read</a>
+                    </div>
+                </div>
+                <div id="sm_emp-delete-form" style="display:none;">
+                    <h2>Delete employee from supermarket_employees</h2>
+                    <form method="post" action="sm_delete_employees/">
+                        {% csrf_token %}
+                        <input type="text" class="input input-text" name="id" placeholder="id" required><br>
+                        <input type="submit" class="button-style button-submit" value="Delete">
+                    </form>
+                    <div style="font-size: 18px; font-style:oblique;">
+                        <a href="#" onclick="SM_EMPshowAddForm()">Add</a> |
+                        <a href="#" onclick="SM_EMPshowEditForm()">Edit</a> |
+                        <a href="{% url 'sm_read_employees' %}" target="_blank">Read</a>
+                    </div>
+                </div>
+            </div>
+            <button class="button-close"
+                onclick="document.getElementById('supermarket_popup').style.display = 'none';">Close</button>
+        </div>
+        <div id="residencies_popup"
+            style="display:none;position:absolute;top:50%;left:50%;transform:translate(-50%, -50%);background-color:#eceaea;padding:10px;border-radius:6px;z-index: 1; border: 1px solid black; width: 280px; max-height: 440px; overflow-y: auto; justify-content: center; font-size: 12px;">
+            <button id="btn-house" class="button-style">Houses</button>
+            <button id="btn-apartment" class="button-style">Apartments</button>
+            <button id="btn-resident" class="button-style">Residents</button>
+            <div id="RE-HOUSES">
+                <div id="re_hou-add-form">
+                    <h2>Add house to residencies_houses</h2>
+                    <form class="HAform" method="post" action="re_add_houses/">
+                        {% csrf_token %}
+                        <input type="text" class="input input-text" name="address" placeholder="address" required><br>
+                        <input type="number" class="input input-text" name="number_of_rooms" placeholder="no. of rooms"
+                            required><br>
+                        <input type="number" class="input input-text" name="area" placeholder="area" required><br>
+                        <input type="number" class="input input-text" name="monthly_rent" placeholder="rent"
+                            required><br>
+                        <label for="occupied">occupied</label>
+                        <input type="checkbox" name="occupied" id="occupied"><br>
+                        <input type="submit" class="button-style button-submit" value="Submit">
+                    </form>
+                    <div style="font-size: 18px; font-style:oblique;">
+                        <a href="#" onclick="RE_HOUshowEditForm()">Edit</a> |
+                        <a href="#" onclick="RE_HOUshowDeleteForm()">Delete</a> |
+                        <a href="{% url 're_read_houses' %}" target="_blank">Read</a>
+                    </div>
+                </div>
+                <div id="re_hou-edit-form" style="display:none;">
+                    <h2>Edit house from residencies_houses</h2>
+                    <form method="post" action="re_edit_houses/">
+                        {% csrf_token %}
+                        <input type="number" class="input input-text" name="id" placeholder="id" required><br>
+                        <input type="text" class="input input-text" name="address" placeholder="address" required><br>
+                        <input type="number" class="input input-text" name="number_of_rooms" placeholder="no. of rooms"
+                            required><br>
+                        <input type="number" class="input input-text" name="area" placeholder="area" required><br>
+                        <input type="number" class="input input-text" name="monthly_rent" placeholder="rent"
+                            required><br>
+                        <label for="occupied">occupied</label>
+                        <input type="checkbox" name="occupied" id="occupied"><br>
+                        <input type="submit" class="button-style button-submit" value="Submit">
+                    </form>
+                    <div style="font-size: 18px; font-style:oblique;">
+                        <a href="#" onclick="RE_HOUshowAddForm()">Add</a> |
+                        <a href="#" onclick="RE_HOUshowDeleteForm()">Delete</a> |
+                        <a href="{% url 're_read_houses' %}" target="_blank">Read</a>
+                    </div>
+                </div>
+                <div id="re_hou-delete-form" style="display:none;">
+                    <h2>Delete house from residencies_houses</h2>
+                    <form class="HDForm" method="post" action="re_delete_houses/">
+                        {% csrf_token %}
+                        <input type="number" class="input input-text" name="id" placeholder="id" required><br>
+                        <input type="submit" class="button-style button-submit" value="Delete">
+                    </form>
+                    <div style="font-size: 18px; font-style:oblique;">
+                        <a href="#" onclick="RE_HOUshowAddForm()">Add</a> |
+                        <a href="#" onclick="RE_HOUshowEditForm()">Edit</a> |
+                        <a href="{% url 're_read_houses' %}" target="_blank">Read</a>
+                    </div>
+                </div>
+            </div>
+            <div id="RE-APARTMENTS">
+                <div id="re_apt-add-form">
+                    <h2>Add apartment to residencies_apartments</h2>
+                    <form class="HAform" method="post" action="re_add_apartments/">
+                        {% csrf_token %}
+                        <input type="text" class="input input-text" name="address" placeholder="address" required><br>
+                        <input type="text" class="input input-text" name="building_name" placeholder="building name"
+                            required><br>
+                        <input type="number" class="input input-text" name="apartment_number" placeholder="apt. no."
+                            required><br>
+                        <input type="number" class="input input-text" name="number_of_rooms" placeholder="no. of rooms"
+                            required><br>
+                        <input type="number" class="input input-text" name="area" placeholder="area²" required><br>
+                        <input type="number" class="input input-text" name="monthly_rent" placeholder="rent"
+                            required><br>
+                        <label for="occupied">occupied</label>
+                        <input type="checkbox" name="occupied" id="occupied"><br>
+                        <input type="submit" class="button-style button-submit" value="Submit">
+                    </form>
+                    <div style="font-size: 18px; font-style:oblique;">
+                        <a href="#" onclick="RE_APTshowEditForm()">Edit</a> |
+                        <a href="#" onclick="RE_APTshowDeleteForm()">Delete</a> |
+                        <a href="{% url 're_read_apartments' %}" target="_blank">Read</a>
+                    </div>
+                </div>
+                <div id="re_apt-edit-form" style="display:none;">
+                    <h2>Edit apartment from residencies_apartments</h2>
+                    <form method="post" action="re_edit_apartments/">
+                        {% csrf_token %}
+                        <input type="number" class="input input-text" name="id" placeholder="id" required><br>
+                        <input type="text" class="input input-text" name="address" placeholder="address" required><br>
+                        <input type="text" class="input input-text" name="building_name" placeholder="building name"
+                            required><br>
+                        <input type="number" class="input input-text" name="apartment_number" placeholder="apt. no."
+                            required><br>
+                        <input type="number" class="input input-text" name="number_of_rooms" placeholder="no. of rooms"
+                            required><br>
+                        <input type="number" class="input input-text" name="area" placeholder="area²" required><br>
+                        <input type="number" class="input input-text" name="monthly_rent" placeholder="rent"
+                            required><br>
+                        <label for="occupied">occupied</label>
+                        <input type="checkbox" name="occupied" id="occupied"><br>
+                        <input type="submit" class="button-style button-submit" value="Submit">
+                    </form>
+                    <div style="font-size: 18px; font-style:oblique;">
+                        <a href="#" onclick="RE_APTshowAddForm()">Add</a> |
+                        <a href="#" onclick="RE_APTshowDeleteForm()">Delete</a> |
+                        <a href="{% url 're_read_apartments' %}" target="_blank">Read</a>
+                    </div>
+                </div>
+                <div id="re_apt-delete-form" style="display:none;">
+                    <h2>Delete apartment from residencies_apartments</h2>
+                    <form method="post" action="re_delete_apartments/">
+                        {% csrf_token %}
+                        <input type="number" class="input input-text" name="id" placeholder="id" required><br>
+                        <input type="submit" class="button-style button-submit" value="Delete">
+                    </form>
+                    <div style="font-size: 18px; font-style:oblique;">
+                        <a href="#" onclick="RE_APTshowAddForm()">Add</a> |
+                        <a href="#" onclick="RE_APTshowEditForm()">Edit</a> |
+                        <a href="{% url 're_read_apartments' %}" target="_blank">Read</a>
+                    </div>
+                </div>
+            </div>
+            <div id="RE-RESIDENTS">
+                <div id="re_res-add-form">
+                    <h2>Add resident to residencies_residents</h2>
+                    <form class="HAform" method="post" action="re_add_residencies/">
+                        {% csrf_token %}
+                        <input type="text" class="input input-text" name="first_name" placeholder="first name"
+                            required><br>
+                        <input type="text" class="input input-text" name="family_name" placeholder=" family name"
+                            required><br>
+                        <input type="text" class="input input-text" name="email" placeholder="email" required><br>
+                        <input type="text" class="input input-text" name="phone" placeholder="phone" required><br>
+                        <input type="number" class="input input-text" name="age" placeholder="age" required><br>
+                        <label for="property_type">Sex</label><br>
+                        <input type="radio" id="M" name="sex" value="M">
+                        <label for="M">M</label>
+                        <input type="radio" id="F" name="sex" value="F">
+                        <label for="F">F</label><br>
+                        <input type="text" class="input input-text" name="occupation" placeholder="occupation"
+                            required><br>
+                        <input type="text" class="input input-text" name="religion" placeholder="religion" required><br>
+                        <label for="property_type">Select property type</label><br>
+                        <input type="radio" id="apartment" name="property_type" value="apartment">
+                        <label for="apartment">Apartment</label>
+                        <input type="radio" id="house" name="property_type" value="house">
+                        <label for="house">House</label><br>
+                        <input type="text" class="input input-text" name="propertyid" placeholder="property id"
+                            required><br>
+                        <input type="submit" class="button-style button-submit" value="Submit">
+                    </form>
+                    <div style="font-size: 18px; font-style:oblique;">
+                        <a href="#" onclick="RE_RESshowEditForm()">Edit</a> |
+                        <a href="#" onclick="RE_RESshowDeleteForm()">Delete</a> |
+                        <a href="{% url 're_read_residencies' %}" target="_blank">Read</a>
+                    </div>
+                </div>
+                <div id="re_res-edit-form" style="display:none;">
+                    <h2>Edit resident from residencies_residents</h2>
+                    <form method="post" action="re_edit_residencies/">
+                        {% csrf_token %}
+                        <input type="number" class="input input-text" name="id" placeholder="id" required>
+                        <input type="text" class="input input-text" name="first_name" placeholder="first name"
+                            required><br>
+                        <input type="text" class="input input-text" name="family_name" placeholder=" family name"
+                            required><br>
+                        <input type="text" class="input input-text" name="email" placeholder="email" required><br>
+                        <input type="text" class="input input-text" name="phone" placeholder="phone" required><br>
+                        <input type="number" class="input input-text" name="age" placeholder="age" required><br>
+                        <label for="property_type">Sex</label><br>
+                        <input type="radio" id="M" name="sex" value="M">
+                        <label for="M">M</label>
+                        <input type="radio" id="F" name="sex" value="F">
+                        <label for="F">F</label><br>
+                        <input type="text" class="input input-text" name="occupation" placeholder="occupation"
+                            required><br>
+                        <input type="text" class="input input-text" name="religion" placeholder="religion" required><br>
+                        <label for="property_type">Select property type</label><br>
+                        <input type="radio" id="apartment" name="property_type" value="apartment">
+                        <label for="apartment">Apartment</label>
+                        <input type="radio" id="house" name="property_type" value="house">
+                        <label for="house">House</label><br>
+                        <input type="text" class="input input-text" name="propertyid" placeholder="property id"
+                            required><br>
+                        <input type="submit" class="button-style button-submit" value="Submit">
+                    </form>
+                    <div style="font-size: 18px; font-style:oblique;">
+                        <a href="#" onclick="RE_RESshowAddForm()">Add</a> |
+                        <a href="#" onclick="RE_RESshowDeleteForm()">Delete</a> |
+                        <a href="{% url 're_read_residencies' %}" target="_blank">Read</a>
+                    </div>
+                </div>
+                <div id="re_res-delete-form" style="display:none;">
+                    <h2>Delete resident from residencies_residents</h2>
+                    <form method="post" action="re_delete_residencies/">
+                        {% csrf_token %}
+                        <input type="number" class="input input-text" name="id" placeholder="id" required>
+                        <input type="submit" class="button-style button-submit" value="Delete">
+                    </form>
+                    <div style="font-size: 18px; font-style:oblique;">
+                        <a href="#" onclick="RE_RESshowAddForm()">Add</a> |
+                        <a href="#" onclick="RE_RESshowEditForm()">Edit</a> |
+                        <a href="{% url 're_read_residencies' %}" target="_blank">Read</a>
+                    </div>
+                </div>
+            </div>
+            <button class="button-close"
+                onclick="document.getElementById('residencies_popup').style.display = 'none';">Close</button>
+        </div>
+        <div id="prayer_popup"
+            style="display:none;position:absolute;top:50%;left:50%;transform:translate(-50%, -50%);background-color:#eceaea;padding:10px;border-radius:6px;z-index: 1; border: 1px solid black; width: 280px; max-height: 440px; overflow-y: auto; justify-content: center; font-size: 12px;">
+            <div id="PR-PRAYER">
+                <div id="pr_pra-add-form">
+                    <h2>Add place of worship</h2>
+                    <form method="post" action="pr_add_prayer/">
+                        {% csrf_token %}
+                        <input type="text" class="input input-text" name="name" placeholder="name" required><br>
+                        <input type="text" class="input input-text" name="address" placeholder="address" required><br>
+                        <input type="text" class="input input-text" name="denomination" placeholder="denomination"
+                            required><br>
+                        <input type="submit" class="button-style button-submit" value="Submit">
+                    </form>
+                    <div style="font-size: 18px; font-style:oblique;">
+                        <a href="#" onclick="PR_PRAshowEditForm()">Edit</a> |
+                        <a href="#" onclick="PR_PRAshowDeleteForm()">Delete</a> |
+                        <a href="{% url 'pr_read_prayer' %}" target="_blank">Read</a>
+                    </div>
+                </div>
+                <div id="pr_pra-edit-form" style="display:none;">
+                    <h2>Edit place of worship</h2>
+                    <form method="post" action="pr_edit_prayer/">
+                        {% csrf_token %}
+                        <input type="text" class="input input-text" name="id" placeholder="id" required><br>
+                        <input type="text" class="input input-text" name="name" placeholder="name" required><br>
+                        <input type="text" class="input input-text" name="address" placeholder="address" required><br>
+                        <input type="text" class="input input-text" name="denomination" placeholder="denomination"
+                            required><br>
+                        <input type="submit" class="button-style button-submit" value="Submit">
+                    </form>
+                    <div style="font-size: 18px; font-style:oblique;">
+                        <a href="#" onclick="PR_PRAshowAddForm()">Add</a> |
+                        <a href="#" onclick="PR_PRAshowDeleteForm()">Delete</a> |
+                        <a href="{% url 'pr_read_prayer' %}" target="_blank">Read</a>
+                    </div>
+                </div>
+                <div id="pr_pra-delete-form" style="display:none;">
+                    <h2>Delete place of worphip</h2>
+                    <form method="post" action="pr_delete_prayer/">
+                        {% csrf_token %}
+                        <input type="text" class="input input-text" name="id" placeholder="id" required><br>
+                        <input type="submit" class="button-style button-submit" value="Delete">
+                    </form>
+                    <div style="font-size: 18px; font-style:oblique;">
+                        <a href="#" onclick="PR_PRAshowAddForm()">Add</a> |
+                        <a href="#" onclick="PR_PRAshowEditForm()">Edit</a> |
+                        <a href="{% url 'pr_read_prayer' %}" target="_blank">Read</a>
+                    </div>
+                </div>
+                <button class="button-close"
+                    onclick="document.getElementById('prayer_popup').style.display = 'none';">Close</button>
+            </div>
+        </div>
+        <div id="bank_popup"
+            style="display:none;position:absolute;top:50%;left:50%;transform:translate(-50%, -50%);background-color:#eceaea;padding:10px;border-radius:6px;z-index: 1; border: 1px solid black; width: 280px; max-height: 440px; overflow-y: auto; justify-content: center; font-size: 12px;">
+            <button class="button-style" id="btn-customer">Customers</button>
+            <button class="button-style" id="btn-account">Accounts</button>
+            <div id="BA-CUSTOMERS">
+                <div id="ba_cus-add-form">
+                    <h2>Add customer to bank_customers</h2>
+                    <form class="HAform" method="post" action="ba_add_customers/">
+                        {% csrf_token %}
+                        <input type="text" class="input input-text" name="name" placeholder="name" required><br>
+                        <input type="number" class="input input-text" name="age" placeholder="age" required><br>
+                        <input type="text" class="input input-text" name="address" placeholder="address" required><br>
+                        <input type="submit" class="button-style button-submit" value="Submit">
+                    </form>
+                    <div style="font-size: 18px; font-style:oblique;">
+                        <a href="#" onclick="BA_CUSshowEditForm()">Edit</a> |
+                        <a href="#" onclick="BA_CUSshowDeleteForm()">Delete</a> |
+                        <a href="{% url 'ba_read_customers' %}" target="_blank">Read</a>
+                    </div>
+                </div>
+                <div id="ba_cus-edit-form" style="display:none;">
+                    <h2>Edit customer from bank_customers</h2>
+                    <form method="post" action="ba_edit_customers/">
+                        {% csrf_token %}
+                        <input type="number" class="input input-text" name="id" placeholder="id" required><br>
+                        <input type="text" class="input input-text" name="name" placeholder="name" required><br>
+                        <input type="number" class="input input-text" name="age" placeholder="age" required><br>
+                        <input type="text" class="input input-text" name="address" placeholder="address" required><br>
+                        <input type="submit" class="button-style button-submit" value="Submit">
+                    </form>
+                    <div style="font-size: 18px; font-style:oblique;">
+                        <a href="#" onclick="BA_CUSshowAddForm()">Add</a> |
+                        <a href="#" onclick="BA_CUSshowDeleteForm()">Delete</a> |
+                        <a href="{% url 'ba_read_customers' %}" target="_blank">Read</a>
+                    </div>
+                </div>
+                <div id="ba_cus-delete-form" style="display:none;">
+                    <h2>Delete customer from bank_customers</h2>
+                    <form class="HDForm" method="post" action="ba_delete_customers/">
+                        {% csrf_token %}
+                        <input type="number" class="input input-text" name="id" placeholder="id" required><br>
+                        <input type="submit" class="button-style button-submit" value="Delete">
+                    </form>
+                    <div style="font-size: 18px; font-style:oblique;">
+                        <a href="#" onclick="BA_CUSshowAddForm()">Add</a> |
+                        <a href="#" onclick="BA_CUSshowEditForm()">Edit</a> |
+                        <a href="{% url 'ba_read_customers' %}" target="_blank">Read</a>
+                    </div>
+                </div>
+            </div>
+            <div id="BA-ACCOUNTS">
+                <div id="ba_acc-add-form">
+                    <h2>Add account to bank_accounts</h2>
+                    <form class="HAform" method="post" action="ba_add_accounts/">
+                        {% csrf_token %}
+                        <input type="text" class="input input-text" name="number" placeholder="acc. number"
+                            required><br>
+                        <input type="number" class="input input-text" name="balance" placeholder="balance" required><br>
+                        <input type="number" class="input input-text" name="customerid" placeholder="customer id"
+                            required><br>
+                        <input type="submit" class="button-style button-submit" value="Submit">
+                    </form>
+                    <div style="font-size: 18px; font-style:oblique;">
+                        <a href="#" onclick="BA_ACCshowEditForm()">Edit</a> |
+                        <a href="#" onclick="BA_ACCshowDeleteForm()">Delete</a> |
+                        <a href="{% url 'ba_read_accounts' %}" target="_blank">Read</a>
+                    </div>
+                </div>
+                <div id="ba_acc-edit-form" style="display:none;">
+                    <h2>Edit account from bank_accounts</h2>
+                    <form method="post" action="ba_edit_accounts/">
+                        {% csrf_token %}
+                        <input type="number" class="input input-text" name="id" placeholder="id" required><br>
+                        <input type="text" class="input input-text" name="number" placeholder="acc. number"
+                            required><br>
+                        <input type="number" class="input input-text" name="balance" placeholder="balance" required><br>
+                        <input type="number" class="input input-text" name="customerid" placeholder="customer id"
+                            required><br>
+                        <input type="submit" class="button-style button-submit" value="Submit">
+                    </form>
+                    <div style="font-size: 18px; font-style:oblique;">
+                        <a href="#" onclick="BA_ACCshowAddForm()">Add</a> |
+                        <a href="#" onclick="BA_ACCshowDeleteForm()">Delete</a> |
+                        <a href="{% url 'ba_read_accounts' %}" target="_blank">Read</a>
+                    </div>
+                </div>
+                <div id="ba_acc-delete-form" style="display:none;">
+                    <h2>Delete account from bank_accounts</h2>
+                    <form class="HDForm" method="post" action="ba_delete_accounts/">
+                        {% csrf_token %}
+                        <input type="number" class="input input-text" name="id" placeholder="id" required><br>
+                        <input type="submit" class="button-style button-submit" value="Delete">
+                    </form>
+                    <div style="font-size: 18px; font-style:oblique;">
+                        <a href="#" onclick="BA_ACCshowAddForm()">Add</a> |
+                        <a href="#" onclick="BA_ACCshowEditForm()">Edit</a> |
+                        <a href="{% url 'ba_read_accounts' %}" target="_blank">Read</a>
+                    </div>
+                </div>
+            </div>
+            <button class="button-close"
+                onclick="document.getElementById('bank_popup').style.display = 'none';">Close</button>
+        </div>
+        <div id="drugstore_popup"
+            style="display:none;position:absolute;top:50%;left:50%;transform:translate(-50%, -50%);background-color:#eceaea;padding:10px;border-radius:6px;z-index: 1; border: 1px solid black; width: 280px; max-height: 440px; overflow-y: auto; justify-content: center; font-size: 12px;">
+            <button class="button-style" id="btn-customers">Customers</button>
+            <button class="button-style" id="btn-prescription">Prescriptions</button>
+            <button class="button-style" id="btn-storage">Storage</button>
+            <button class="button-style" id="btn-supplier">Suppliers</button>
+            <div id="DS-CUSTOMERS">
+                <div id="ds_cus-add-form">
+                    <h2>Add customer to drugstore_customers</h2>
+                    <form class="HAform" method="post" action="ds_add_customers/">
+                        {% csrf_token %}
+                        <input type="text" class="input input-text" name="name" placeholder="name" required=><br>
+                        <input type="number" class="input input-text" name="age" placeholder="age" required=><br>
+                        <input type="text" class="input input-text" name="address" placeholder=" address" required><br>
+                        <input type="text" class="input input-text" name="phone" placeholder="phone" required><br>
+                        <input class="button-style button-submit" type="submit" value="Submit">
+                    </form>
+                    <div style="font-size: 18px; font-style:oblique;">
+                        <a href="#" onclick="DS_CUSshowEditForm()">Edit</a> |
+                        <a href="#" onclick="DS_CUSshowDeleteForm()">Delete</a> |
+                        <a href="{% url 'ds_read_customers' %}" target="_blank">Read</a>
+                    </div>
+                </div>
+                <div id="ds_cus-edit-form" style="display:none;">
+                    <h2>Edit customer from drugstore_customers</h2>
+                    <form method="post" action="ds_edit_customers/">
+                        {% csrf_token %}
+                        <input type="number" class="input input-text" name="id" placeholder="id" required><br>
+                        <input type="text" class="input input-text" name="name" placeholder="name" required=><br>
+                        <input type="number" class="input input-text" name="age" placeholder="age" required=><br>
+                        <input type="text" class="input input-text" name="address" placeholder=" address" required><br>
+                        <input type="text" class="input input-text" name="phone" placeholder="phone" required><br>
+                        <input class="button-style button-submit" type="submit" value="Submit">
+                    </form>
+                    <div style="font-size: 18px; font-style:oblique;">
+                        <a href="#" onclick="DS_CUSshowAddForm()">Add</a> |
+                        <a href="#" onclick="DS_CUSshowDeleteForm()">Delete</a> |
+                        <a href="{% url 'ds_read_customers' %}" target="_blank">Read</a>
+                    </div>
+                </div>
+                <div id="ds_cus-delete-form" style="display:none;">
+                    <h2>Delete customer from drugstore customers</h2>
+                    <form class="HDForm" method="post" action="ds_delete_customers/">
+                        {% csrf_token %}
+                        <input type="number" class="input input-text" name="id" placeholder="id" required><br>
+                        <input type="submit" class="button-style button-submit" value="Delete"><br>
+                    </form>
+                    <div style="font-size: 18px; font-style:oblique;">
+                        <a href="#" onclick="DS_CUSshowAddForm()">Add</a> |
+                        <a href="#" onclick="DS_CUSshowEditForm()">Edit</a> |
+                        <a href="{% url 'ds_read_customers' %}" target="_blank">Read</a>
+                    </div>
+                </div>
+            </div>
+            <div id="DS-PRESCRIPTIONS">
+                <div id="ds_pre-add-form">
+                    <h2>Add prescription to drugstore_prescriptions</h2>
+                    <form class="HAform" method="post" action="ds_add_prescriptions/">
+                        {% csrf_token %}
+                        <input type="text" class="input input-text" name="customerid" placeholder="customer id"
+                            required><br>
+                        <input type="text" class="input input-text" name="item" placeholder="item" required><br>
+                        <input type="number" class="input input-text" name="quantity" placeholder=" qt." required><br>
+                        <label for="rx_date">rx. date</label><br>
+                        <input type="date" class="input input-date" id="rx_date" name="date" placeholder="date"
+                            required><br>
+                        <input type="submit" class="button-style button-submit" value="Submit">
+                    </form>
+                    <div style="font-size: 18px; font-style:oblique;">
+                        <a href="#" onclick="DS_PREshowEditForm()">Edit</a> |
+                        <a href="#" onclick="DS_PREshowDeleteForm()">Delete</a> |
+                        <a href="{% url 'ds_read_prescriptions' %}" target="_blank">Read</a>
+                    </div>
+                </div>
+                <div id="ds_pre-edit-form" style="display:none;">
+                    <h2>Edit prescription from drugstore_prescriptions</h2>
+                    <form method="post" action="ds_edit_prescriptions/">
+                        {% csrf_token %}
+                        <input type="text" class="input input-text" name="id" placeholder="id" required><br>
+                        <input type="text" class="input input-text" name="customerid" placeholder="customer id"
+                            required><br>
+                        <input type="text" class="input input-text" name="item" placeholder="item" required><br>
+                        <input type="number" class="input input-text" name="quantity" placeholder=" qt." required><br>
+                        <label for="rx_date">rx. date</label><br>
+                        <input type="date" class="input input-date" id="rx_date" name="date" placeholder="date"
+                            required><br>
+                        <input type="submit" class="button-style button-submit" value="Submit">
+                    </form>
+                    <div style="font-size: 18px; font-style:oblique;">
+                        <a href="#" onclick="DS_PREshowAddForm()">Add</a> |
+                        <a href="#" onclick="DS_PREshowDeleteForm()">Delete</a> |
+                        <a href="{% url 'ds_read_prescriptions' %}" target="_blank">Read</a>
+                    </div>
+                </div>
+                <div id="ds_pre-delete-form" style="display:none;">
+                    <h2>Delete prescription from drugstore_prescriptions</h2>
+                    <form class="HDForm" method="post" action="ds_delete_prescriptions/">
+                        {% csrf_token %}
+                        <input type="number" class="input input-text" name="id" placeholder="id" required><br>
+                        <input type="submit" class="button-style button-submit" value="Delete">
+                    </form>
+                    <div style="font-size: 18px; font-style:oblique;">
+                        <a href="#" onclick="DS_PREshowAddForm()">Add</a> |
+                        <a href="#" onclick="DS_PREshowEditForm()">Edit</a> |
+                        <a href="{% url 'ds_read_prescriptions' %}" target="_blank">Read</a>
+                    </div>
+                </div>
+            </div>
+            <div id="DS-STORAGE">
+                <div id="ds_sto-add-form">
+                    <h2>Add item to drugstore_storage</h2>
+                    <form class="HAform" method="post" action="ds_add_storage/">
+                        {% csrf_token %}
+                        <input type="text" class="input input-text" name="item" placeholder="item" required><br>
+                        <input type="number" class="input input-text" name="quantity" placeholder="qt." required><br>
+                        <label for="exp_date">exp. date</label><br>
+                        <input type="date" class="input input-date" id="exp_date" name="expire_date"
+                            placeholder="expire_date..." required><br>
+                        <input type="text" class="input input-text" name="supplierid" placeholder="supplier id"
+                            required><br>
+                        <input type="submit" class="button-style button-submit" value="Submit">
+                    </form>
+                    <div style="font-size: 18px; font-style:oblique;">
+                        <a href="#" onclick="DS_STOshowEditForm()">Edit</a> |
+                        <a href="#" onclick="DS_STOshowDeleteForm()">Delete</a> |
+                        <a href="{% url 'ds_read_storage' %}" target="_blank">Read</a>
+                    </div>
+                </div>
+                <div id="ds_sto-edit-form" style="display:none;">
+                    <h2>Edit item from drugstore_storage</h2>
+                    <form method="post" action="ds_edit_storage/">
+                        {% csrf_token %}
+                        <input type="number" class="input input-text" name="id" placeholder="id" required><br>
+                        <input type="text" class="input input-text" name="item" placeholder="item" required><br>
+                        <input type="number" class="input input-text" name="quantity" placeholder="qt." required><br>
+                        <label for="exp_date">exp. date</label><br>
+                        <input type="date" class="input input-date" id="exp_date" name="expire_date"
+                            placeholder="expire_date..." required><br>
+                        <input type="text" class="input input-text" name="supplierid" placeholder="supplier id"
+                            required><br>
+                        <input type="submit" class="button-style button-submit" value="Submit">
+                    </form>
+                    <div style="font-size: 18px; font-style:oblique;">
+                        <a href="#" onclick="DS_STOshowAddForm()">Add</a> |
+                        <a href="#" onclick="DS_STOshowDeleteForm()">Delete</a> |
+                        <a href="{% url 'ds_read_storage' %}" target="_blank">Read</a>
+                    </div>
+                </div>
+                <div id="ds_sto-delete-form" style="display:none;">
+                    <h2>Delete item from drugstore_storage</h2>
+                    <form class="HDForm" method="post" action="ds_delete_storage/">
+                        {% csrf_token %}
+                        <input type="number" class="input input-text" name="id" placeholder="id" required><br>
+                        <input type="submit" class="button-style button-submit" value="Delete">
+                    </form>
+                    <div style="font-size: 18px; font-style:oblique;">
+                        <a href="#" onclick="DS_STOshowAddForm()">Add</a> |
+                        <a href="#" onclick="DS_STOshowEditForm()">Edit</a> |
+                        <a href="{% url 'ds_read_storage' %}" target="_blank">Read</a>
+                    </div>
+                </div>
+            </div>
+            <div id="DS-SUPPLIERS">
+                <div id="ds_sup-add-form">
+                    <h2>Add supplier to drugstore_suppliers</h2>
+                    <form class="HAform" method="post" action="ds_add_suppliers/">
+                        {% csrf_token %}
+                        <input type="text" class="input input-text" name="name" placeholder="name" required><br>
+                        <input type="text" class="input input-text" name="phone" placeholder="phone" required><br>
+                        <input type="text" class="input input-text" name="email" placeholder="email" required><br>
+                        <input type="submit" class="button-style button-submit" value="Submit">
+                    </form>
+                    <div style="font-size: 18px; font-style:oblique;">
+                        <a href="#" onclick="DS_SUPshowEditForm()">Edit</a> |
+                        <a href="#" onclick="DS_SUPshowDeleteForm()">Delete</a> |
+                        <a href="{% url 'ds_read_suppliers' %}" target="_blank">Read</a>
+                    </div>
+                </div>
+                <div id="ds_sup-edit-form" style="display:none;">
+                    <h2>Edit supplier from drugstore_suppliers</h2>
+                    <form method="post" action="ds_edit_suppliers/">
+                        {% csrf_token %}
+                        <input type="number" class="input input-text" name="id" placeholder="id" required><br>
+                        <input type="text" class="input input-text" name="name" placeholder="name" required><br>
+                        <input type="text" class="input input-text" name="phone" placeholder="phone" required><br>
+                        <input type="text" class="input input-text" name="email" placeholder="email" required><br>
+                        <input type="submit" class="button-style button-submit" value="Submit">
+                    </form>
+                    <div style="font-size: 18px; font-style:oblique;">
+                        <a href="#" onclick="DS_SUPshowAddForm()">Add</a> |
+                        <a href="#" onclick="DS_SUPshowDeleteForm()">Delete</a> |
+                        <a href="{% url 'ds_read_suppliers' %}" target="_blank">Read</a>
+                    </div>
+                </div>
+                <div id="ds_sup-delete-form" style="display:none;">
+                    <h2>Delete supplier from drugstore_suppliers</h2>
+                    <form class="HDForm" method="post" action="ds_delete_suppliers/">
+                        {% csrf_token %}
+                        <input type="number" class="input input-text" name="id" placeholder="id" required><br>
+                        <input type="submit" class="button-style button-submit" value="Delete">
+                    </form>
+                    <div style="font-size: 18px; font-style:oblique;">
+                        <a href="#" onclick="DS_SUPshowAddForm()">Add</a> |
+                        <a href="#" onclick="DS_SUPshowEditForm()">Edit</a> |
+                        <a href="{% url 'ds_read_suppliers' %}" target="_blank">Read</a>
+                    </div>
+                </div>
+            </div>
+            <button class="button-close"
+                onclick="document.getElementById('drugstore_popup').style.display = 'none';">Close</button>
+        </div>
+        <div id="gym_popup"
+            style="display:none;position:absolute;top:50%;left:50%;transform:translate(-50%, -50%);background-color:#eceaea;padding:10px;border-radius:6px;z-index: 1; border: 1px solid black; width: 280px; max-height: 440px; overflow-y: auto; justify-content: center; font-size: 12px;">
+            <button class="button-style" id="btn-gy-customers">Customers</button>
+            <button class="button-style" id="btn-gy-shifts">Shifts</button>
+            <button class="button-style" id="btn-gy-staff">Staff</button>
+            <div id="GY-CUSTOMERS">
+                <div id="gy_cus-add-form">
+                    <h2>Add customer to gym_customers</h2>
+                    <form class="HAform" method="post" action="gy_add_customers/">
+                        {% csrf_token %}
+                        <input type="text" class="input input-text" name="name" placeholder="name" required><br>
+                        <input type="number" class="input input-text" name="age" placeholder="age" required><br>
+                        <label for="m_start">mbrshp. start</label><br>
+                        <input type="date" class="input input-date" id="m_start" name="membership_start" required><br>
+                        <label for="m_end">mbrshp. end</label><br>
+                        <input type="date" class="input input-date" id="m_end" name="membership_end" required><br>
+                        <input type="submit" class="button-style button-submit" value="Submit"><br>
+                    </form>
+                    <div style="font-size: 18px; font-style:oblique;">
+                        <a href="#" onclick="GY_CUSshowEditForm()">Edit</a> |
+                        <a href="#" onclick="GY_CUSshowDeleteForm()">Delete</a> |
+                        <a href="{% url 'gy_read_customers' %}" target="_blank">Read</a>
+                    </div>
+                </div>
+                <div id="gy_cus-edit-form" style="display:none;">
+                    <h2>Edit customer from gym_customers</h2>
+                    <form method="post" action="gy_edit_customers/">
+                        {% csrf_token %}
+                        <input type="number" class="input input-text" name="id" placeholder="id" required><br>
+                        <input type="text" class="input input-text" name="name" placeholder="name" required><br>
+                        <input type="number" class="input input-text" name="age" placeholder="age" required><br>
+                        <label for="m_start">mbrshp. start</label><br>
+                        <input type="date" class="input input-date" id="m_start" name="membership_start" required><br>
+                        <label for="m_end">mbrshp. end</label><br>
+                        <input type="date" class="input input-date" id="m_end" name="membership_end" required><br>
+                        <input type="submit" class="button-style button-submit" value="Submit"><br>
+                    </form>
+                    <div style="font-size: 18px; font-style:oblique;">
+                        <a href="#" onclick="GY_CUSshowAddForm()">Add</a> |
+                        <a href="#" onclick="GY_CUSshowDeleteForm()">Delete</a> |
+                        <a href="{% url 'gy_read_customers' %}" target="_blank">Read</a>
+                    </div>
+                </div>
+                <div id="gy_cus-delete-form" style="display:none;">
+                    <h2>Delete customer from gym_customers</h2>
+                    <form class="HDForm" method="post" action="gy_delete_customers/">
+                        {% csrf_token %}
+                        <input type="number" class="input input-text" name="id" placeholder="id" required><br>
+                        <input type="submit" class="button-style button-submit" value="Delete">
+                    </form>
+                    <div style="font-size: 18px; font-style:oblique;">
+                        <a href="#" onclick="GY_CUSshowAddForm()">Add</a> |
+                        <a href="#" onclick="GY_CUSshowEditForm()">Edit</a> |
+                        <a href="{% url 'gy_read_customers' %}" target="_blank">Read</a>
+                    </div>
+                </div>
+            </div>
+            <div id="GY-SHIFTS">
+                <div id="gy_shi-add-form">
+                    <h2>Add shift to gym_shifts</h2>
+                    <form class="HAform" method="post" action="gy_add_shifts/">
+                        {% csrf_token %}
+                        <label for="start">start date</label><br>
+                        <input type="date" class="input input-date" id="start" name="start" required><br>
+                        <input type="number" class="input input-text" name="hour" placeholder="hour" required><br>
+                        <input type="number" class="input input-text" name="workhours" placeholder="workhours"
+                            required><br>
+                        <input type="submit" class="button-style button-submit" value="Submit">
+                    </form>
+                    <div style="font-size: 18px; font-style:oblique;">
+                        <a href="#" onclick="GY_SHIshowEditForm()">Edit</a> |
+                        <a href="#" onclick="GY_SHIshowDeleteForm()">Delete</a> |
+                        <a href="{% url 'gy_read_shifts' %}" target="_blank">Read</a>
+                    </div>
+                </div>
+                <div id="gy_shi-edit-form" style="display:none;">
+                    <h2>Edit shift from gym_shifts</h2>
+                    <form method="post" action="gy_edit_shifts/">
+                        {% csrf_token %}
+                        <input type="number" class="input input-text" name="id" placeholder="id" required><br>
+                        <label for="start">start date</label><br>
+                        <input type="date" class="input input-date" id="start" name="start" required><br>
+                        <input type="number" class="input input-text" name="hour" placeholder="hour" required><br>
+                        <input type="number" class="input input-text" name="workhours" placeholder="workhours"
+                            required><br>
+                        <input type="submit" class="button-style button-submit" value="Submit">
+                    </form>
+                    <div style="font-size: 18px; font-style:oblique;">
+                        <a href="#" onclick="GY_SHIshowAddForm()">Add</a> |
+                        <a href="#" onclick="GY_SHIshowDeleteForm()">Delete</a> |
+                        <a href="{% url 'gy_read_shifts' %}" target="_blank">Read</a>
+                    </div>
+                </div>
+                <div id="gy_shi-delete-form" style="display:none;">
+                    <h2>Delete shift from gym_shifts</h2>
+                    <form class="HDForm" method="post" action="gy_delete_shifts/">
+                        {% csrf_token %}
+                        <input type="text" class="input input-text" name="id" placeholder="id" required><br>
+                        <input type="submit" class="button-style button-submit" value="Delete">
+                    </form>
+                    <div style="font-size: 18px; font-style:oblique;">
+                        <a href="#" onclick="GY_SHIshowAddForm()">Add</a> |
+                        <a href="#" onclick="GY_SHIshowDeleteForm()">Edit</a> |
+                        <a href="{% url 'gy_read_shifts' %}" target="_blank">Read</a>
+                    </div>
+                </div>
+            </div>
+            <div id="GY-STAFF">
+                <div id="gy_sta-add-form">
+                    <h2>Add staff to gym staff</h2>
+                    <form class="HAform" method="post" action="gy_add_staff/">
+                        {% csrf_token %}
+                        <input type="text" class="input input-text" name="name" placeholder="name" required><br>
+                        <input type="number" class="input input-text" name="age" placeholder="age" required><br>
+                        <label for="hire_date">Hire date</label><br>
+                        <input type="date" class="input input-date" id="hire_date" name="hire_date" required><br>
+                        <input type="number" class="input input-text" name="salary" placeholder="salary" required><br>
+                        <input type="text" class="input input-text" name="shiftid" placeholder="shift id" required><br>
+                        <input type="submit" class="button-style button-submit" value="Submit">
+                    </form>
+                    <div style="font-size: 18px; font-style:oblique;">
+                        <a href="#" onclick="GY_STAshowEditForm()">Edit</a> |
+                        <a href="#" onclick="GY_STAshowDeleteForm()">Delete</a> |
+                        <a href="{% url 'gy_read_staff' %}" target="_blank">Read</a>
+                    </div>
+                </div>
+                <div id="gy_sta-edit-form" style="display:none;">
+                    <h2>Edit staff from gym_staff</h2>
+                    <form method="post" action="gy_edit_staff/">
+                        {% csrf_token %}
+                        <input type="number" class="input input-text" name="id" placeholder="id" required><br>
+                        <input type="text" class="input input-text" name="name" placeholder="name" required><br>
+                        <input type="number" class="input input-text" name="age" placeholder="age" required><br>
+                        <label for="hire_date">Hire date</label><br>
+                        <input type="date" class="input input-date" id="hire_date" name="hire_date" required><br>
+                        <input type="number" class="input input-text" name="salary" placeholder="salary" required><br>
+                        <input type="text" class="input input-text" name="shiftid" placeholder="shift id" required><br>
+                        <input type="submit" class="button-style button-submit" value="Submit">
+                    </form>
+                    <div style="font-size: 18px; font-style:oblique;">
+                        <a href="#" onclick="GY_STAshowAddForm()">Add</a> |
+                        <a href="#" onclick="GY_STAshowDeleteForm()">Delete</a> |
+                        <a href="{% url 'gy_read_staff' %}" target="_blank">Read</a>
+                    </div>
+                </div>
+                <div id="gy_sta-delete-form" style="display:none;">
+                    <h2>Delete staff from gym_staff</h2>
+                    <form class="HDForm" method="post" action="gy_delete_staff/">
+                        {% csrf_token %}
+                        <input type="text" name="id" class="input input-text" placeholder="id" required><br>
+                        <input type="submit" class="button-style button-submit" value="Delete">
+                    </form>
+                    <div style="font-size: 18px; font-style:oblique;">
+                        <a href="#" onclick="GY_STAshowAddForm()">Add</a> |
+                        <a href="#" onclick="GY_STAshowEditForm()">Edit</a> |
+                        <a href="{% url 'gy_read_staff' %}" target="_blank">Read</a>
+                    </div>
+                </div>
+            </div>
+            <button class="button-close"
+                onclick="document.getElementById('gym_popup').style.display = 'none';">Close</button>
+        </div>
+        <div id="school_popup"
+            style="display:none;position:absolute;top:50%;left:50%;transform:translate(-50%, -50%);background-color:#eceaea;padding:10px;border-radius:6px;z-index: 1; border: 1px solid black; width: 280px; max-height: 440px; overflow-y: auto; justify-content: center; font-size: 12px;">
+            <button class="button-style" id="btn-students">Students</button>
+            <button class="button-style" id="btn-teachers">Teachers</button>
+            <button class="button-style" id="btn-courses">Courses</button>
+            <button class="button-style" id="btn-enrollments">Enrollments</button>
+            <button class="button-style" id="btn-librarybooks">📚 Lib. Books</button>
+            <button class="button-style" id="btn-librarymembers">📚 Lib. Members</button>
+            <button class="button-style" id="btn-libraryloans">📚 Lib. Loans</button>
+            <div id="SC-STUDENTS">
+                <div id="sc_std-add-form">
+                    <h2>Add student to school_students</h2>
+                    <form class="HAform" method="post" action="sc_add_students/">
+                        {% csrf_token %}
+                        <input type="text" class="input input-text" name="name" placeholder="name" required><br>
+                        <input type="number" class="input input-text" name="age" placeholder="age" required><br>
+                        <input type="text" class="input input-text" name="grade" placeholder="grade" required><br>
+                        <input type="text" class="input input-text" class="input input-text" name="address"
+                            placeholder="address"><br>
+                        <input type="submit" class="button-style button-submit" value="Submit">
+                    </form>
+                    <div style="font-size: 18px; font-style:oblique;">
+                        <a href="#" onclick="SC_STDshowEditForm()">Edit</a> |
+                        <a href="#" onclick="SC_STDshowDeleteForm()">Delete</a> |
+                        <a href="{% url 'sc_read_students' %}" target="_blank">Read</a>
+                    </div>
+                </div>
+                <div id="sc_std-edit-form" style="display:none;">
+                    <h2>Edit student from school_students</h2>
+                    <form method="post" action="sc_edit_students/">
+                        {% csrf_token %}
+                        <input type="number" class="input input-text" name="id" placeholder="id" required><br>
+                        <input type="text" class="input input-text" name="name" placeholder="name" required><br>
+                        <input type="number" class="input input-text" name="age" placeholder="age" required><br>
+                        <input type="text" class="input input-text" name="grade" placeholder="grade" required><br>
+                        <input type="text" class="input input-text" class="input input-text" name="address"
+                            placeholder="address"><br>
+                        <input type="submit" class="button-style button-submit" value="Submit">
+                    </form>
+                    <div style="font-size: 18px; font-style:oblique;">
+                        <a href="#" onclick="SC_STDshowAddForm()">Add</a> |
+                        <a href="#" onclick="SC_STDshowDeleteForm()">Delete</a> |
+                        <a href="{% url 'sc_read_students' %}" target="_blank">Read</a>
+                    </div>
+                </div>
+                <div id="sc_std-delete-form" style="display:none;">
+                    <h2>Delete student from school_students</h2>
+                    <form class="HDForm" method="post" action="sc_delete_students/">
+                        {% csrf_token %}
+                        <input type="number" class="input input-text" name="id" placeholder="id" required><br>
+                        <input type="submit" class="button-style button-submit" value="Delete"><br>
+                    </form>
+                    <div style="font-size: 18px; font-style:oblique;">
+                        <a href="#" onclick="SC_STDshowAddForm()">Add</a> |
+                        <a href="#" onclick="SC_STDshowEditForm()">Edit</a> |
+                        <a href="{% url 'sc_read_students' %}" target="_blank">Read</a>
+                    </div>
+                </div>
+            </div>
+            <div id="SC-TEACHERS">
+                <div id="sc_tea-add-form">
+                    <h2>Add teacher to school_teachers</h2>
+                    <form class="HAform" method="post" action="sc_add_teachers/">
+                        {% csrf_token %}
+                        <input type="text" class="input input-text" name="name" placeholder="name" required><br>
+                        <input type="number" class="input input-text" name="age" placeholder="age" required><br>
+                        <input type="text" class="input input-text" name="email" placeholder="email" required><br>
+                        <input type="submit" class="button-style button-submit" value="Submit">
+                    </form>
+                    <div style="font-size: 18px; font-style:oblique;">
+                        <a href="#" onclick="SC_TEAshowEditForm()">Edit</a> |
+                        <a href="#" onclick="SC_TEAshowDeleteForm()">Delete</a> |
+                        <a href="{% url 'sc_read_teachers' %}" target="_blank">Read</a>
+                    </div>
+                </div>
+                <div id="sc_tea-edit-form" style="display:none;">
+                    <h2>Edit teacher from school_teachers</h2>
+                    <form method="post" action="sc_edit_teachers/">
+                        {% csrf_token %}
+                        <input type="number" class="input input-text" name="id" placeholder="id" required><br>
+                        <input type="text" class="input input-text" name="name" placeholder="name" required><br>
+                        <input type="number" class="input input-text" name="age" placeholder="age" required><br>
+                        <input type="text" class="input input-text" name="email" placeholder="email" required><br>
+                        <input type="submit" class="button-style button-submit" value="Submit">
+                    </form>
+                    <div style="font-size: 18px; font-style:oblique;">
+                        <a href="#" onclick="SC_TEAshowAddForm()">Add</a> |
+                        <a href="#" onclick="SC_TEAshowDeleteForm()">Delete</a> |
+                        <a href="{% url 'sc_read_teachers' %}" target="_blank">Read</a>
+                    </div>
+                </div>
+                <div id="sc_tea-delete-form" style="display:none;">
+                    <h2>Delete teacher from school_teachers</h2>
+                    <form class="HDForm" method="post" action="sc_delete_teachers/">
+                        {% csrf_token %}
+                        <input type="number" class="input input-text" name="id" placeholder="id" required><br>
+                        <input type="submit" class="button-style button-submit" value="Delete"><br>
+                    </form>
+                    <div style="font-size: 18px; font-style:oblique;">
+                        <a href="#" onclick="SC_TEAshowAddForm()">Add</a> |
+                        <a href="#" onclick="SC_TEAshowEditForm()">Edit</a> |
+                        <a href="{% url 'sc_read_teachers' %}" target="_blank">Read</a>
+                    </div>
+                </div>
+            </div>
+            <div id="SC-COURSES">
+                <div id="sc_cos-add-form">
+                    <h2>Add course to school_courses</h2>
+                    <form class="HAform" method="post" action="sc_add_courses/">
+                        {% csrf_token %}
+                        <input type="text" class="input input-text" name="name" placeholder="course name" required><br>
+                        <input type="text" class="input input-text" name="code" placeholder="code" required><br>
+                        <input type="text" class="input input-text" class="input input-text" name="teacherid"
+                            placeholder="teacher id" required><br>
+                        <input type="submit" class="button-style button-submit" value="Submit">
+                    </form>
+                    <div style="font-size: 18px; font-style:oblique;">
+                        <a href="#" onclick="SC_COSshowEditForm()">Edit</a> |
+                        <a href="#" onclick="SC_COSshowDeleteForm()">Delete</a> |
+                        <a href="{% url 'sc_read_courses' %}" target="_blank">Read</a>
+                    </div>
+                </div>
+                <div id="sc_cos-edit-form" style="display:none;">
+                    <h2>Edit course from school_courses</h2>
+                    <form method="post" action="sc_edit_courses/">
+                        {% csrf_token %}
+                        <input type="text" class="input input-text" name="id" placeholder="id" required><br>
+                        <input type="text" class="input input-text" name="name" placeholder="course name" required><br>
+                        <input type="text" class="input input-text" name="code" placeholder="code" required><br>
+                        <input type="text" class="input input-text" class="input input-text" name="teacherid"
+                            placeholder="teacher id" required><br>
+                        <input type="submit" class="button-style button-submit" value="Submit">
+                    </form>
+                    <div style="font-size: 18px; font-style:oblique;">
+                        <a href="#" onclick="SC_COSshowAddForm()">Add</a> |
+                        <a href="#" onclick="SC_COSshowDeleteForm()">Delete</a> |
+                        <a href="{% url 'sc_read_courses' %}" target="_blank">Read</a>
+                    </div>
+                </div>
+                <div id="sc_cos-delete-form" style="display:none;">
+                    <h2>Delete course from school_courses</h2>
+                    <form class="HDForm" method="post" action="sc_delete_courses/">
+                        {% csrf_token %}
+                        <input type="number" class="input input-text" name="id" placeholder="id" required><br>
+                        <input type="submit" class="button-style button-submit" value="Delete"><br>
+                    </form>
+                    <div style="font-size: 18px; font-style:oblique;">
+                        <a href="#" onclick="SC_COSshowAddForm()">Add</a> |
+                        <a href="#" onclick="SC_COSshowEditForm()">Edit</a> |
+                        <a href="{% url 'sc_read_courses' %}" target="_blank">Read</a>
+                    </div>
+                </div>
+            </div>
+            <div id="SC-ENROLLMENTS">
+                <div id="sc_enr-add-form">
+                    <h2>Add enrollment to school_enrollments</h2>
+                    <form class="HAform" method="post" action="sc_add_enrollments/">
+                        {% csrf_token %}
+                        <input type="text" class="input input-text" name="studentid" placeholder="student id"
+                            required><br>
+                        <input type="text" class="input input-text" name="courseid" placeholder="course id"
+                            required><br>
+                        <input type="submit" class="button-style button-submit" value="Submit">
+                    </form>
+                    <div style="font-size: 18px; font-style:oblique;">
+                        <a href="#" onclick="SC_ENRshowEditForm()">Edit</a> |
+                        <a href="#" onclick="SC_ENRshowDeleteForm()">Delete</a> |
+                        <a href="{% url 'sc_read_enrollments' %}" target="_blank">Read</a>
+                    </div>
+                </div>
+                <div id="sc_enr-edit-form" style="display:none;">
+                    <h2>Edit enrollment from school enrollments</h2>
+                    <form method="post" action="sc_edit_enrollments/">
+                        {% csrf_token %}
+                        <input type="text" class="input input-text" name="id" placeholder="id" required><br>
+                        <input type="text" class="input input-text" name="studentid" placeholder="student id"
+                            required><br>
+                        <input type="text" class="input input-text" name="courseid" placeholder="course id"
+                            required><br>
+                        <input type="submit" class="button-style button-submit" value="Submit">
+                    </form>
+                    <div style="font-size: 18px; font-style:oblique;">
+                        <a href="#" onclick="SC_ENRshowAddForm()">Add</a> |
+                        <a href="#" onclick="SC_ENRshowDeleteForm()">Delete</a> |
+                        <a href="{% url 'sc_read_enrollments' %}" target="_blank">Read</a>
+                    </div>
+                </div>
+                <div id="sc_enr-delete-form" style="display:none;">
+                    <h2>Delete enrollment from school enrollments</h2>
+                    <form class="HDForm" method="post" action="sc_delete_enrollments/">
+                        {% csrf_token %}
+                        <input type="number" class="input input-text" name="id" placeholder="id" required><br>
+                        <input type="submit" class="button-style button-submit" value="Delete">
+                    </form>
+                    <div style="font-size: 18px; font-style:oblique;">
+                        <a href="#" onclick="SC_ENRshowAddForm()">Add</a> |
+                        <a href="#" onclick="SC_ENRshowEditForm()">Edit</a> |
+                        <a href="{% url 'sc_read_enrollments' %}" target="_blank">Read</a>
+                    </div>
+                </div>
+            </div>
+            <div id="SC-L-BOOKS">
+                <div id="sc_lbk-add-form">
+                    <h2>Add book to school_lib.books</h2>
+                    <form class="HAform" method="post" action="sc_add_librarybooks/">
+                        {% csrf_token %}
+                        <input type="text" class="input input-text" name="title" placeholder="title" required><br>
+                        <input type="text" class="input input-text" name="author" placeholder="author" required><br>
+                        <input type="text" class="input input-text" name="genre" placeholder="genre" required><br>
+                        <input type="text" class="input input-text" name="isbn" placeholder="isbn" required><br>
+                        <label for="pub_date">pub. date</label><br>
+                        <input type="date" class="input input-date" id="pub_date" name="publication_date" required><br>
+                        <input type="submit" class="button-style button-submit" value="Submit">
+                    </form>
+                    <div style="font-size: 18px; font-style:oblique;">
+                        <a href="#" onclick="SC_LBKshowEditForm()">Edit</a> |
+                        <a href="#" onclick="SC_LBKshowDeleteForm()">Delete</a> |
+                        <a href="{% url 'sc_read_librarybooks' %}" target="_blank">Read</a>
+                    </div>
+                </div>
+                <div id="sc_lbk-edit-form" style="display:none;">
+                    <h2>Edit book from school_lib.books</h2>
+                    <form method="post" action="sc_edit_librarybooks/">
+                        {% csrf_token %}
+                        <input type="text" class="input input-text" name="id" placeholder="id" required><br>
+                        <input type="text" class="input input-text" name="title" placeholder="title" required><br>
+                        <input type="text" class="input input-text" name="author" placeholder="author" required><br>
+                        <input type="text" class="input input-text" name="genre" placeholder="genre" required><br>
+                        <input type="text" class="input input-text" name="isbn" placeholder="isbn" required><br>
+                        <label for="pub_date">pub. date</label><br>
+                        <input type="date" class="input input-date" id="pub_date" name="publication_date" required><br>
+                        <input type="submit" class="button-style button-submit" value="Submit">
+                        <input type="submit" class="button-style button-submit" value="Submit">
+                    </form>
+                    <div style="font-size: 18px; font-style:oblique;">
+                        <a href="#" onclick="SC_LBKshowAddForm()">Add</a> |
+                        <a href="#" onclick="SC_LBKshowDeleteForm()">Delete</a> |
+                        <a href="{% url 'sc_read_librarybooks' %}" target="_blank">Read</a>
+                    </div>
+                </div>
+                <div id="sc_lbk-delete-form" style="display:none;">
+                    <h2>Delete book from school_lib.books</h2>
+                    <form class="HDForm" method="post" action="sc_delete_librarybooks/">
+                        {% csrf_token %}
+                        <input type="number" class="input input-text" name="id" placeholder="id" required><br>
+                        <input type="submit" class="button-style button-submit" value="Delete">
+                    </form>
+                    <div style="font-size: 18px; font-style:oblique;">
+                        <a href="#" onclick="SC_LBKshowAddForm()">Add</a> |
+                        <a href="#" onclick="SC_LBKshowEditForm()">Edit</a> |
+                        <a href="{% url 'sc_read_librarybooks' %}" target="_blank">Read</a>
+                    </div>
+                </div>
+            </div>
+            <div id="SC-L-MEMBERS">
+                <div id="sc_lmb-add-form">
+                    <h2>Add member to school_lib.members</h2>
+                    <form class="HAform" method="post" action="sc_add_librarymembers/">
+                        {% csrf_token %}
+                        <input type="text" class="input input-text" name="name" placeholder="name" required><br>
+                        <input type="text" class="input input-text" name="age" placeholder="age" required><br>
+                        <input type="text" class="input input-text" name="address" placeholder="address" required><br>
+                        <input type="text" class="input input-text" name="phone" placeholder="phone" required><br>
+                        <input type="submit" class="button-style button-submit" value="Submit">
+                    </form>
+                    <div style="font-size: 18px; font-style:oblique;">
+                        <a href="#" onclick="SC_LMBshowEditForm()">Edit</a> |
+                        <a href="#" onclick="SC_LMBshowDeleteForm()">Delete</a> |
+                        <a href="{% url 'sc_read_librarymembers' %}" target="_blank">Read</a>
+                    </div>
+                </div>
+                <div id="sc_lmb-edit-form" style="display:none;">
+                    <h2>Edit member from school_lib.members</h2>
+                    <form method="post" action="sc_edit_librarymembers/">
+                        {% csrf_token %}
+                        <input type="text" class="input input-text" name="id" placeholder="id" required><br>
+                        <input type="text" class="input input-text" name="name" placeholder="name" required><br>
+                        <input type="text" class="input input-text" name="age" placeholder="age" required><br>
+                        <input type="text" class="input input-text" name="address" placeholder="address" required><br>
+                        <input type="text" class="input input-text" name="phone" placeholder="phone" required><br>
+                        <input type="submit" class="button-style button-submit" value="Submit">
+                    </form>
+                    <div style="font-size: 18px; font-style:oblique;">
+                        <a href="#" onclick="SC_LMBshowAddForm()">Add</a> |
+                        <a href="#" onclick="SC_LMBshowDeleteForm()">Delete</a> |
+                        <a href="{% url 'sc_read_librarymembers' %}" target="_blank">Read</a>
+                    </div>
+                </div>
+                <div id="sc_lmb-delete-form" style="display:none;">
+                    <h2>Delete member from school_lib.members</h2>
+                    <form class="HDForm" method="post" action="sc_delete_librarymembers/">
+                        {% csrf_token %}
+                        <input type="number" class="input input-text" name="id" placeholder="id" required><br>
+                        <input type="submit" class="button-style button-submit" value="Delete">
+                    </form>
+                    <div style="font-size: 18px; font-style:oblique;">
+                        <a href="#" onclick="SC_LMBshowAddForm()">Add</a> |
+                        <a href="#" onclick="SC_LMBshowEditForm()">Edit</a> |
+                        <a href="{% url 'sc_read_librarymembers' %}" target="_blank">Read</a>
+                    </div>
+                </div>
+            </div>
+            <div id="SC-L-LOANS">
+                <div id="sc_llo-add-form">
+                    <h2>Add loan to school_lib.loans</h2>
+                    <form class="HAform" method="post" action="sc_add_libraryloans/">
+                        {% csrf_token %}
+                        <input type="number" class="input input-text" name="memberid" placeholder="member id"
+                            required><br>
+                        <input type="number" class="input input-text" name="bookid" placeholder="book id" required><br>
+                        <label for="b_date">brd. date</label><br>
+                        <input type="date" class="input input-date" id="b_date" name="borrowed_date" required><br>
+                        <label for="r_date">rtn. date</label><br>
+                        <input type="date" class="input input-date" id="r_date" name="return_date" required><br>
+                        <input type="submit" class="button-style button-submit" value="Submit">
+                    </form>
+                    <div style="font-size: 18px; font-style:oblique;">
+                        <a href="#" onclick="SC_LLOshowEditForm()">Edit</a> |
+                        <a href="#" onclick="SC_LLOshowDeleteForm()">Delete</a> |
+                        <a href="{% url 'sc_read_libraryloans' %}" target="_blank">Read</a>
+                    </div>
+                </div>
+                <div id="sc_llo-edit-form" style="display:none;">
+                    <h2>Edit loan from school_lib.loans</h2>
+                    <form method="post" action="sc_edit_libraryloans/">
+                        {% csrf_token %}
+                        <input type="text" class="input input-text" name="id" placeholder="id" required><br>
+                        <input type="number" class="input input-text" name="memberid" placeholder="member id"
+                            required><br>
+                        <input type="number" class="input input-text" name="bookid" placeholder="book id" required><br>
+                        <label for="b_date">brd. date</label><br>
+                        <input type="date" class="input input-date" id="b_date" name="borrowed_date" required><br>
+                        <label for="r_date">rtn. date</label><br>
+                        <input type="date" class="input input-date" id="r_date" name="return_date" required><br>
+                        <input type="submit" class="button-style button-submit" value="Submit">
+                    </form>
+                    <div style="font-size: 18px; font-style:oblique;">
+                        <a href="#" onclick="SC_LLOshowAddForm()">Add</a> |
+                        <a href="#" onclick="SC_LLOshowDeleteForm()">Delete</a> |
+                        <a href="{% url 'sc_read_libraryloans' %}" target="_blank">Read</a>
+                    </div>
+                </div>
+                <div id="sc_llo-delete-form" style="display:none;">
+                    <h2>Delete loan from school_lib.loans</h2>
+                    <form class="HDForm" method="post" action="sc_delete_libraryloans/">
+                        {% csrf_token %}
+                        <input type="number" class="input input-text" name="id" placeholder="id" required><br>
+                        <input type="submit" class="button-style button-submit" value="Delete">
+                    </form>
+                    <div style="font-size: 18px; font-style:oblique;">
+                        <a href="#" onclick="SC_LLOshowAddForm()">Add</a> |
+                        <a href="#" onclick="SC_LLOshowDeleteForm()">Update</a> |
+                        <a href="{% url 'sc_read_libraryloans' %}" target="_blank">Read</a>
+                    </div>
+                </div>
+            </div>
+            <button class="button-close"
+                onclick="document.getElementById('school_popup').style.display = 'none';">Close</button>
+        </div>
+    </div>
+    <!-- </div>
+    </div> -->
+    <style>
+        #residencies_popup::-webkit-scrollbar,
+        #supermarket_popup::-webkit-scrollbar,
+        #prayer_popup::-webkit-scrollbar,
+        #bank_popup::-webkit-scrollbar,
+        #drugstore_popup::-webkit-scrollbar,
+        #gym_popup::-webkit-scrollbar,
+        #school_popup::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        #residencies_popup::-webkit-scrollbar-track,
+        #supermarket_popup::-webkit-scrollbar-track,
+        #prayer_popup::-webkit-scrollbar-track,
+        #bank_popup::-webkit-scrollbar-track,
+        #drugstore_popup::-webkit-scrollbar-track,
+        #gym_popup::-webkit-scrollbar-track,
+        #school_popup::-webkit-scrollbar-track {
+            background-color: #413c3c;
+        }
+
+        #residencies_popup::-webkit-scrollbar-thumb,
+        #supermarket_popup::-webkit-scrollbar-thumb,
+        #prayer_popup::-webkit-scrollbar-thumb,
+        #bank_popup::-webkit-scrollbar-thumb,
+        #drugstore_popup::-webkit-scrollbar-thumb,
+        #gym_popup::-webkit-scrollbar-thumb,
+        #school_popup::-webkit-scrollbar-thumb {
+            background-color: #c1c1c1;
+            border-radius: 10px;
+        }
+    </style>
+    <!-- </div> -->
+    <script src="static/script/show_popup.js"></script>
+    <script src="static/script/crud_buttons.js"></script>
+    <script src="static/script/switch_db_buttons.js"></script>
+</body>
+
+</html>

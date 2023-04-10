@@ -1,0 +1,126 @@
+from django.urls import path
+from . import views
+
+urlpatterns = [
+    path('', views.index, name='index'),
+# SUPERMARKET INVENTORY
+    path('sm_add_inventory/', views.sm_add_inventory, name='sm_add_inventory'),
+    path('sm_delete_inventory/', views.sm_delete_inventory, name='sm_delete_inventory'),
+    path('sm_read_inventory/', views.sm_read_inventory, name='sm_read_inventory'),
+    path('sm_edit_inventory/', views.sm_edit_inventory, name='sm_edit_inventory'),
+  # SUPERMARKET FUNCTIONS
+    path('sm_add_functions/', views.sm_add_functions, name='sm_add_functions'),
+    path('sm_delete_functions/', views.sm_delete_functions, name='sm_delete_functions'),
+    path('sm_edit_functions/', views.sm_edit_functions, name='sm_edit_functions'),
+    path('sm_read_functions/', views.sm_read_functions, name='sm_read_functions'),
+    # SUPERMARKET SHIFTS
+    path('sm_add_shifts/', views.sm_add_shifts, name='sm_add_shifts'),
+    path('sm_read_shifts/', views.sm_read_shifts, name='sm_read_shifts'),
+    path('sm_edit_shifts/', views.sm_edit_shifts, name='sm_edit_shifts'),
+    path('sm_delete_shifts/', views.sm_delete_shifts, name='sm_delete_shifts'),
+    # SUPERMARKET EMPLOYEES
+    path('sm_add_employees/', views.sm_add_employees, name='sm_add_employees'),
+    path('sm_read_employees/', views.sm_read_employees, name='sm_read_employees'),
+    path('sm_delete_employees/', views.sm_delete_employees, name='sm_delete_employees'),
+    path('sm_edit_employees/', views.sm_edit_employees, name='sm_edit_employees'),
+    # RESIDENCIES HOUSES
+    path('re_add_houses/', views.re_add_houses, name='re_add_houses'),
+    path('re_read_houses/', views.re_read_houses, name='re_read_houses'),
+    path('re_delete_houses/', views.re_delete_houses, name='re_delete_houses'),
+    path('re_edit_houses/', views.re_edit_houses, name='re_edit_houses'),
+    # RESIDENTS APARTMENTS
+    path('re_add_apartments/', views.re_add_apartments, name='re_add_apartments'),
+    path('re_read_apartments/', views.re_read_apartments, name='re_read_apartments'),
+    path('re_delete_apartments/', views.re_delete_apartments, name='re_delete_apartments'),
+    path('re_edit_apartments/', views.re_edit_apartments, name='re_edit_apartments'),
+    # RESIDENTS RESIDENCIES
+    path('re_add_residencies/', views.re_add_residencies, name='re_add_residencies'),
+    path('re_read_residencies/', views.re_read_residencies, name='re_read_residencies'),
+    path('re_delete_residencies/', views.re_delete_residencies, name='re_delete_residencies'),
+    path('re_edit_residencies/', views.re_edit_residencies, name='re_edit_residencies'),
+    # PRAYER
+    path('pr_add_prayer/', views.pr_add_prayer, name='pr_add_prayer'),
+    path('pr_read_prayer/', views.pr_read_prayer, name='pr_read_prayer'),
+    path('pr_delete_prayer/', views.pr_delete_prayer, name='pr_delete_prayer'),
+    path('pr_edit_prayer/', views.pr_edit_prayer, name='pr_edit_prayer'),
+    # BANK CUSTOMERS
+    path('ba_add_customers/', views.ba_add_customers, name='ba_add_customers'),
+    path('ba_read_customers/', views.ba_read_customers, name='ba_read_customers'),
+    path('ba_delete_customers/', views.ba_delete_customers, name='ba_delete_customers'),
+    path('ba_edit_customers/', views.ba_edit_customers, name='ba_edit_customers'),
+    # BANK ACCOUNTS
+    path('ba_add_accounts/', views.ba_add_accounts, name='ba_add_accounts'),
+    path('ba_read_accounts/', views.ba_read_accounts, name='ba_read_accounts'),
+    path('ba_delete_accounts/', views.ba_delete_accounts, name='ba_delete_accounts'),
+    path('ba_edit_accounts/', views.ba_edit_accounts, name='ba_edit_accounts'),
+# DRUGSTORE CUSTOMERS
+    path('ds_add_customers/', views.ds_add_customers, name='ds_add_customers'),
+    path('ds_read_customers/', views.ds_read_customers, name='ds_read_customers'),
+    path('ds_delete_customers/', views.ds_delete_customers, name='ds_delete_customers'),
+    path('ds_edit_customers/', views.ds_edit_customers, name='ds_edit_customers'),
+# DRUGSTORE PRESCRIPTIONS
+    path('ds_add_prescriptions/', views.ds_add_prescriptions, name='ds_add_prescriptions'),
+    path('ds_read_prescriptions/', views.ds_read_prescriptions, name='ds_read_prescriptions'),
+    path('ds_delete_prescriptions/', views.ds_delete_prescriptions, name='ds_delete_prescriptions'),
+    path('ds_edit_prescriptions/', views.ds_edit_prescriptions, name='ds_edit_prescriptions'),
+# DRUGSTORE SUPPLIERS
+    path('ds_add_suppliers/', views.ds_add_suppliers, name='ds_add_suppliers'),
+    path('ds_read_suppliers/', views.ds_read_suppliers, name='ds_read_suppliers'),
+    path('ds_delete_suppliers/', views.ds_delete_suppliers, name='ds_delete_suppliers'),
+    path('ds_edit_suppliers/', views.ds_edit_suppliers, name='ds_edit_suppliers'),
+# DRUGSTORE STORAGE
+    path('ds_add_storage/', views.ds_add_storage, name='ds_add_storage'),
+    path('ds_read_storage/', views.ds_read_storage, name='ds_read_storage'),
+    path('ds_delete_storage/', views.ds_delete_storage, name='ds_delete_storage'),
+    path('ds_edit_storage/', views.ds_edit_storage, name='ds_edit_storage'),
+# GYM CUSTOMERS
+    path('gy_add_customers/', views.gy_add_customers, name='gy_add_customers'),
+    path('gy_read_customers/', views.gy_read_customers, name='gy_read_customers'),
+    path('gy_delete_customers/', views.gy_delete_customers, name='gy_delete_customers'),
+    path('gy_edit_customers/', views.gy_edit_customers, name='gy_edit_customers'),
+# GYM CUSTOMERS
+    path('gy_add_shifts/', views.gy_add_shifts, name='gy_add_shifts'),
+    path('gy_read_shifts/', views.gy_read_shifts, name='gy_read_shifts'),
+    path('gy_delete_shifts/', views.gy_delete_shifts, name='gy_delete_shifts'),
+    path('gy_edit_shifts/', views.gy_edit_shifts, name='gy_edit_shifts'),
+ # GYM STAFF
+    path('gy_add_staff/', views.gy_add_staff, name='gy_add_staff'),
+    path('gy_read_staff/', views.gy_read_staff, name='gy_read_staff'),
+    path('gy_delete_staff/', views.gy_delete_staff, name='gy_delete_staff'),
+    path('gy_edit_staff/', views.gy_edit_staff, name='gy_edit_staff'),
+ # SCHOOL STUDENTS
+    path('sc_add_students/', views.sc_add_students, name='sc_add_students'),
+    path('sc_read_students/', views.sc_read_students, name='sc_read_students'),
+    path('sc_delete_students/', views.sc_delete_students, name='sc_delete_students'),
+    path('sc_edit_students/', views.sc_edit_students, name='sc_edit_students'),
+  # SCHOOL TEACHERS
+    path('sc_add_teachers/', views.sc_add_teachers, name='sc_add_teachers'),
+    path('sc_read_teachers/', views.sc_read_teachers, name='sc_read_teachers'),
+    path('sc_delete_teachers/', views.sc_delete_teachers, name='sc_delete_teachers'),
+    path('sc_edit_teachers/', views.sc_edit_teachers, name='sc_edit_teachers'),
+  # SCHOOL COURSES
+    path('sc_add_courses/', views.sc_add_courses, name='sc_add_courses'),
+    path('sc_read_courses/', views.sc_read_courses, name='sc_read_courses'),
+    path('sc_delete_courses/', views.sc_delete_courses, name='sc_delete_courses'),
+    path('sc_edit_courses/', views.sc_edit_courses, name='sc_edit_courses'),
+ # SCHOOL ENROLLMENTS
+    path('sc_add_enrollments/', views.sc_add_enrollments, name='sc_add_enrollments'),
+    path('sc_read_enrollments/', views.sc_read_enrollments, name='sc_read_enrollments'),
+    path('sc_delete_enrollments/', views.sc_delete_enrollments, name='sc_delete_enrollments'),
+    path('sc_edit_enrollments/', views.sc_edit_enrollments, name='sc_edit_enrollments'),
+ # SCHOOL LIBRARY BOOKS
+    path('sc_add_librarybooks/', views.sc_add_librarybooks, name='sc_add_librarybooks'),
+    path('sc_read_librarybooks/', views.sc_read_librarybooks, name='sc_read_librarybooks'),
+    path('sc_delete_librarybooks/', views.sc_delete_librarybooks, name='sc_delete_librarybooks'),
+    path('sc_edit_librarybooks/', views.sc_edit_librarybooks, name='sc_edit_librarybooks'),
+ # SCHOOL LIBRARY MEMBERS
+    path('sc_add_librarymembers/', views.sc_add_librarymembers, name='sc_add_librarymembers'),
+    path('sc_read_librarymembers/', views.sc_read_librarymembers, name='sc_read_librarymembers'),
+    path('sc_delete_librarymembers/', views.sc_delete_librarymembers, name='sc_delete_librarymembers'),
+    path('sc_edit_librarymembers/', views.sc_edit_librarymembers, name='sc_edit_librarymembers'),
+    #  SCHOOL LIBRARY LOANS
+    path('sc_add_libraryloans/', views.sc_add_libraryloans, name='sc_add_libraryloans'),
+    path('sc_read_libraryloans/', views.sc_read_libraryloans, name='sc_read_libraryloans'),
+    path('sc_delete_libraryloans/', views.sc_delete_libraryloans, name='sc_delete_libraryloans'),
+    path('sc_edit_libraryloans/', views.sc_edit_libraryloans, name='sc_edit_libraryloans'),
+]

@@ -1,0 +1,31 @@
+* {
+    font-family: "Merriweather";
+    font-weight: bold;
+    text-transform: lowercase;
+    text-decoration: none;
+}
+
+h1 {
+    color: rgb(0, 0, 0);
+    font-size: 35px;
+    padding: 15px;
+}
+
+th {
+    color: rgb(252, 251, 251);
+    font-size: 20px;
+    padding: 10px;
+    padding-left: 45px;
+    padding-right: 45px;
+    text-align: center;
+    background-color: rgb(54, 54, 54);
+}
+
+td {
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    text-align: center;
+    background-color: rgb(226, 225, 225);
+    border: 1px solid black;
+    padding: 10px;
+}

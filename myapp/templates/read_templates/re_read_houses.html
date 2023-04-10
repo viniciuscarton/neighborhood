@@ -1,0 +1,28 @@
+<link href="https://fonts.googleapis.com/css?family=Merriweather:400,400i,700,700i&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="../static/css/tables.css" />
+<table>
+    <h1>Residencies_Houses</h1>
+      <thead>
+        <tr>
+          <th>Id</th>
+          <th>Address</th>
+          <th>Number of Rooms</th>
+          <th>Area</th>
+          <th>Monthly Rent</th>
+          <th>Occupied</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for item in houses %}
+          <tr>
+            <td>{{ item.id }}</td>
+            <td>{{ item.address }}</td>
+            <td>{{ item.number_of_rooms }}</td>
+            <td>{{ item.area }}</td>
+            <td>{{ item.monthly_rent }}</td>
+            <td>{{ item.occupied}}</td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+    
